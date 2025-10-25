@@ -3,7 +3,8 @@ nav{
     flex-direction: row;
     justify-content: flex-start;
     gap: 40px;
-    background-color: #ecaa2f;
+    background-color: #F4933E;
+    padding: 20px;
 }
 
 nav a{
@@ -17,21 +18,96 @@ nav a{
 #about{
     display: flex;
     flex-direction: column;
-    background-color: #ecaa2f;
+    background-color: #F4933E;
     text-align: center;
     border-radius: 10px;
     font-size: 25px;
 }
 
+.head-container{
+    background-color: #F4933E;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 50%;
+}
+
+header{
+    background-image: url(elementor-placeholder-image.png);
+    padding: 15%;
+}
+
+header h1, p, a{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+header h1{
+    font-size: 60px;
+}
+
+header p{
+    font-size: 30px;
+}
+header a{
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    padding:  15px 20px;
+    width: 20%;
+    border-radius: 10px;
+    margin: 0 auto;
+}
 
 
 #service{
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: #ecaa2f;
+    background-color: #F4933E;
     font-size: 25px;
     border-radius: 10px;
     max-width: 40%;
     margin-top:30px;
 }
+
+#review-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F4933E;
+    width: 400px 100px;
+    font-size: 25px;
+}
+.copyright{
+    background-color: #F4933E;
+    padding: 30px 20px;
+    font-size: 20px;
+}
+
+
+#pet-1{
+    background-color: #FFA74A;
+    padding: 225px;
+
+}
+#add-additonal-pet{
+    background-color: #FFA74A;
+    padding:225px;
+}
+
+#design-pet{
+    display: flex;
+    flex-wrap:wrap;
+    background-color: #F4933E;
+    gap:20px;
+    margin-top: 20px;
+    padding: 20%;
+}
+.vl{
+    border-left: 1px solid #000000;
+    height: 600px;
+}
+
+
+
