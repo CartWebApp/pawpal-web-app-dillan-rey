@@ -2,7 +2,9 @@
 body {
     margin: 0;
     background-color: #F3E7C2;
+    font-family: Sniglet;
 }
+
 /*Nav Bar*/
 nav{
     display: flex;
@@ -99,6 +101,18 @@ header a{
 /*Your pets section of css*/
 
 #Ppage {
+    margin-top: 5vh;
+    display: flex;
+    flex-wrap: wrap;
     background-color: #F4933E;
 }
-
+#Ppage img {
+    width: 15vw;
+}
+#Ppage figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFA74A;
+    width: 20vw;
+}
