@@ -1,3 +1,5 @@
+/* Home/Index page */
+
 nav{
     display: flex;
     flex-direction: row;
@@ -85,6 +87,8 @@ header a{
     font-size: 20px;
 }
 
+
+/*Your pets section of css*/
 
 #pet-1{
     background-color: #FFA74A;
