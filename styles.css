@@ -1,5 +1,9 @@
 /* Home/Index page */
-
+body {
+    margin: 0;
+    background-color: #F3E7C2;
+}
+/*Nav Bar*/
 nav{
     display: flex;
     flex-direction: row;
@@ -17,6 +21,10 @@ nav a{
     border-radius: 10px;
 }
 
+nav > a:first-child {
+    width: 5vw;
+    height: 3vh;
+}
 #about{
     display: flex;
     flex-direction: column;
@@ -90,28 +98,7 @@ header a{
 
 /*Your pets section of css*/
 
-#pet-1{
-    background-color: #FFA74A;
-    padding: 225px;
-
-}
-#add-additonal-pet{
-    background-color: #FFA74A;
-    padding:225px;
-}
-
-#design-pet{
-    display: flex;
-    flex-wrap:wrap;
+#Ppage {
     background-color: #F4933E;
-    gap:20px;
-    margin-top: 20px;
-    padding: 20%;
 }
-.vl{
-    border-left: 1px solid #000000;
-    height: 600px;
-}
-
-
 
