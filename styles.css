@@ -8,17 +8,18 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    gap: 40px;
+    flex-wrap: wrap;
+    gap: 2vh;
     background-color: #F4933E;
-    padding: 20px;
+    padding: 2vh;
 }
 
 nav a{
     text-decoration: none;
     color: rgb(0, 0, 0);
-    padding: 10px 15px;
-    font-size: 20px;
-    border-radius: 10px;
+    padding: 1vh 1.5vh;
+    font-size: 2vh;
+    border-radius: 1vh;
 }
 
 nav > a:first-child {
@@ -30,20 +31,20 @@ nav > a:first-child {
     flex-direction: column;
     background-color: #F4933E;
     text-align: center;
-    border-radius: 10px;
-    font-size: 25px;
+    border-radius: 1vh;
+    font-size: 2.5vh;
 }
 
 .head-container{
     background-color: #F4933E;
-    border-radius: 10px;
+    border-radius: 1vh;
     margin: 0 auto;
-    width: 50%;
+    width: 69.9vh;
 }
 
 header{
     background-image: url(elementor-placeholder-image.png);
-    padding: 15%;
+    padding: 30vh;
 }
 
 header h1, p, a{
@@ -53,19 +54,19 @@ header h1, p, a{
     
 }
 header h1{
-    font-size: 60px;
+    font-size: 6vh;
 }
 
 header p{
-    font-size: 30px;
+    font-size: 3vh;
 }
 header a{
     text-decoration: none;
     background-color: white;
     color: black;
-    padding:  15px 20px;
-    width: 20%;
-    border-radius: 10px;
+    padding:  1.5vh 2vh;
+    width: 15vh;
+    border-radius: 1vh;
     margin: 0 auto;
 }
 
@@ -75,8 +76,8 @@ header a{
     flex-direction: column;
     text-align: center;
     background-color: #F4933E;
-    font-size: 25px;
-    border-radius: 10px;
+    font-size: 2.5vh;
+    border-radius: 1vh;
     max-width: 40%;
     margin-top:30px;
 }
