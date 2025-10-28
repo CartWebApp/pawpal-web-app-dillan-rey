@@ -9,24 +9,24 @@ body {
 nav{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    gap: 40px;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
     background-color: #F4933E;
-    padding: 20px;
 }
 
+/*Side note: you should almost never use pixels if you want a responsive layout 
+use vw(viewport width), vh(viewport height), or rem (root emphasis) -Rey*/
 nav a{
     text-decoration: none;
     color: rgb(0, 0, 0);
-    padding: 10px 15px;
-    font-size: 20px;
-    border-radius: 10px;
+    font-size: 2vw;
 }
 
-nav > a:first-child {
-    width: 5vw;
-    height: 3vh;
+[alt="Paw Pal Logo"] {
+    width: 15vw;
 }
+
 #about{
     display: flex;
     flex-direction: column;
@@ -106,13 +106,34 @@ header a{
     flex-wrap: wrap;
     background-color: #F4933E;
 }
-#Ppage img {
-    width: 15vw;
-}
-#Ppage figure {
+
+#Ppage a, #Ppage figure {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;    
+}
+
+#Ppage img {
+    width: 10vw;
+    padding: 4vw 5vh;
+}
+
+#Ppage figure {
     background-color: #FFA74A;
-    width: 20vw;
+}
+
+#Ppage a {
+    text-decoration: none;
+    color: black;
+}
+
+#Ppage p {
+    background-color: #BF4904;
+    padding: 1vh 1vw;
+    border: 0.1rem solid black;
+    border-radius: 0.2rem;
+}
+
+#Ppage p:hover {
+    background-color: #e67a3b;
 }
