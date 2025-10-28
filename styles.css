@@ -3,6 +3,8 @@ body {
     margin: 0;
     background-color: #F3E7C2;
     font-family: Sniglet;
+    display: flex;
+    flex-direction: column;
 }
 
 /*Nav Bar*/
@@ -13,20 +15,28 @@ nav{
     align-items: center;
     height: 10vh;
     background-color: #F4933E;
+    width: 100vw;
 }
 
-/*Side note: you should almost never use pixels if you want a responsive layout 
-use vw(viewport width), vh(viewport height), or rem (root emphasis) -Rey*/
 nav a{
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-size: 2vw;
 }
 
+#mobilenav {
+    display: flex;
+    width: 85vw;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 [alt="Paw Pal Logo"] {
     width: 15vw;
 }
 
+/*Side note: you should almost never use pixels if you want a responsive layout 
+use vw(viewport width), vh(viewport height), or rem (root emphasis) -Rey*/
 #about{
     display: flex;
     flex-direction: column;
@@ -105,6 +115,7 @@ header a{
     display: flex;
     flex-wrap: wrap;
     background-color: #F4933E;
+    justify-content: space-around;
 }
 
 #Ppage a, #Ppage figure {
@@ -115,11 +126,15 @@ header a{
 
 #Ppage img {
     width: 10vw;
-    padding: 4vw 5vh;
+    margin: 4vw 5vh;
 }
 
 #Ppage figure {
     background-color: #FFA74A;
+}
+
+#Ppage figure:hover {
+    background-color: #ffb15e;
 }
 
 #Ppage a {
@@ -128,12 +143,33 @@ header a{
 }
 
 #Ppage p {
+    font-size: 1.5rem;
     background-color: #BF4904;
-    padding: 1vh 1vw;
+    padding: 2vh 2vw;
     border: 0.1rem solid black;
     border-radius: 0.2rem;
 }
 
 #Ppage p:hover {
     background-color: #e67a3b;
+}
+
+/*For mobile/tablets*/
+@media screen and (max-width:1024px){
+    /*Nav Note: include icon images of nav using :before*/
+    nav {
+        justify-content: flex-start;
+        order: 1;
+    }
+
+    #mobilenav {
+        display: flex;
+        width: 100vw;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    [alt="Paw Pal Logo"] {
+        display: none;
+    }
 }
