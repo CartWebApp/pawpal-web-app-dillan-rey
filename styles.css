@@ -47,7 +47,8 @@ header{
     padding: 30vh;
 }
 
-header h1, p, a{
+header h1,
+header p, a{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -78,8 +79,8 @@ header a{
     background-color: #F4933E;
     font-size: 2.5vh;
     border-radius: 1vh;
-    max-width: 40%;
-    margin-top:30px;
+    width: 50vh;
+    margin-top:3vh;
 }
 
 #review-container{
@@ -87,13 +88,14 @@ header a{
     flex-direction: column;
     align-items: center;
     background-color: #F4933E;
-    width: 400px 100px;
+    width: 400vh 100vh;
     font-size: 25px;
 }
 .copyright{
     background-color: #F4933E;
-    padding: 30px 20px;
-    font-size: 20px;
+    padding: 3vh 2vh;
+    font-size: 2vh;
+    width: 100%;
 }
 
 
@@ -103,3 +105,38 @@ header a{
     background-color: #F4933E;
 }
 
+/*Create an Account*/
+
+#account-container{
+    background-color: #F4933E;
+    margin-top: 2vh;
+}
+
+#create-acc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#have-acc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#other-sign-up{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    gap: 2vh;
+    text-decoration: none;
+    font-size: 2vh;
+    background-color: white;
+}
+
+.google-img,
+.facebook-img,
+.apple-img {
+    height: auto;
+    width: 24px;
+}
