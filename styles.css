@@ -181,7 +181,7 @@ header a{
 }
 
 
-button{
+#create-acc button{
   background-color: #ffffff;
   color: #000000;
   border: none;
@@ -230,12 +230,25 @@ button{
 /* Map container*/
 
 #map{
-  max-height: 1vh;
+  background-image: url(images/Map.jpg);
+  background-repeat: none;
+  background-size: cover;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
 }
 
 #search-bar{
     display: flex;
-    
+    height: 20px;
+
+}
+
+
+
+
+/* Pets Page*/
+
 #Ppage img {
     width: 10vw;
     margin: 4vw 5vh;
@@ -267,7 +280,7 @@ button{
 }
 
 /*For mobile/tablets*/
-@media screen and (max-width:1024px){
+@media screen and (max-width:1024px) {
     /*Nav Note: include icon images of nav using :before*/
     nav {
         justify-content: flex-start;
