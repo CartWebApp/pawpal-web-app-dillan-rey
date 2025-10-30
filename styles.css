@@ -116,31 +116,86 @@ header a{
 
 /*Create an Account*/
 
-#account-container{
+.account-container{
     background-color: #F4933E;
-    margin-top: 2vh;
+    
+}
+.account-container h1{
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 1vh 2vh;
+    margin-left: 80vh;
+    margin-right: 80vh;
+    border-radius: 1vh;
 }
 
 #create-acc{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 2vh;
 }
 
-#have-acc{
+#create-acc label{
+    font-size: 2vh;
+    margin-right: 18vh;
+}
+
+#create-acc input{
+  padding: 1vh;
+  border: 1px solid #ccc;
+  border-radius: 1vh;
+  font-size: 2vh;
+}
+
+#create-button{
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 1vh;
+  padding: 1.5vh;
+  margin-top: 1vh;
+  cursor: pointer;
+}
+
+
+button{
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 1vh;
+  padding: 1.5vh;
+  margin-top: 1vh;
+  cursor: pointer;
+  font-size: 2vh;
+}
+
+.have-acc{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#other-sign-up{
+.other-sign-up{
     display: flex;
     justify-self: center;
     align-items: center;
     gap: 2vh;
     text-decoration: none;
     font-size: 2vh;
-    background-color: white;
+}
+
+.other-sign-up a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    gap:  2vh;
+    background-color: #ffffff;
+    color: black;
+    padding: 1vh 2vh;
+    border-radius: 1vh;
 }
 
 .google-img,
@@ -148,4 +203,16 @@ header a{
 .apple-img {
     height: auto;
     width: 24px;
+}
+
+
+/* Map container*/
+
+#map{
+  max-height: 1vh;
+}
+
+#search-bar{
+    display: flex;
+    
 }

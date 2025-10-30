@@ -20,26 +20,31 @@
         <a href="account.html">Account</a>
     </nav>
 
-<form id="account-container">
-    <section id="create-acc">
-        <h1>Create an Account</h1>
-        <label for="email">Email</label><br></br>
-        <input type="text" id="email" name="email"><br></br>
-        <label for="password">Password</label><br></br>
-        <input type="text" id="password" name="password"><br></br>
-        <input type="button" value="Submit">
-    </section>
-        <section id="have-acc">
+ 
+<div class="account-container">
+        
+    <h1>Create an Account</h1>
+
+    <form id="create-acc" >
+        <label for="email">Email</label>
+        <input type="text" name="email">
+        <label for="password">Password</label>
+        <input type="text" name="password">
+        <button type="submit" id="create-button">Create Account</button>
+    </form>
+
+        <section class="have-acc">
             <p>Already have an account?</p>
             <a href="login.html">Sign In</a>
         </section>
-            <div id="other-sign-up">
+        
+            <div class="other-sign-up">
                 <a href="#">
                     <img src="images/Google.png" class="google-img">
                     Google
                 </a>
                 <a href="#">
-                    <img src="images/facebook-2021-logo-600x319.png" class="facebook-img">
+                    <img src="images/facebook-icon-free-png.png" class="facebook-img">
                     Facebook
                 </a>
                 <a href="#">
@@ -47,8 +52,7 @@
                     Apple
                 </a>
             </div>
-</form>
-
+</div>
     <footer>
          <p class="copyright">&copy; PawPal 2025.</p>
     </footer>
