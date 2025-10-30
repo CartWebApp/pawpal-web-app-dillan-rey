@@ -118,23 +118,6 @@ header a{
     width: 100%;
 }
 
-
-/*Your pets section of css*/
-
-#Ppage {
-    margin-top: 5vh;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #F4933E;
-    justify-content: space-around;
-}
-
-#Ppage a, #Ppage figure {
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
-}
-
 /*Create an Account*/
 
 .account-container{
@@ -235,7 +218,24 @@ button{
 
 #search-bar{
     display: flex;
-    
+}
+
+/*Your pets section of css*/
+
+#Ppage {
+    margin-top: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F4933E;
+    justify-content: flex-start;
+}
+
+#Ppage a, #Ppage figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
 #Ppage img {
     width: 10vw;
     margin: 4vw 5vh;
@@ -243,6 +243,7 @@ button{
 
 #Ppage figure {
     background-color: #FFA74A;
+    margin: 1.5vh 2vw;
 }
 
 #Ppage figure:hover {
@@ -266,7 +267,7 @@ button{
     background-color: #e67a3b;
 }
 
-/*For mobile/tablets*/
+/*For tablets*/
 @media screen and (max-width:1024px){
     /*Nav Note: include icon images of nav using :before*/
     nav {
@@ -291,5 +292,12 @@ button{
     }
     #Ppage figure {
         margin-inline: 0;
+    }
+}
+
+/*For phone screens*/
+@media screen and (max-width:640px) {
+    footer {
+        display: none;
     }
 }
