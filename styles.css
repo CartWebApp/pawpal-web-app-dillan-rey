@@ -284,4 +284,12 @@ button{
     [alt="Paw Pal Logo"] {
         display: none;
     }
+
+    /*Your Pals page*/
+    #Ppage img {
+        width: 20vw;
+    }
+    #Ppage figure {
+        margin-inline: 0;
+    }
 }
