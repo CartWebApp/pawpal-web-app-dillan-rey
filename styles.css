@@ -3,71 +3,93 @@ body {
     margin: 0;
     background-color: #F3E7C2;
     font-family: Sniglet;
+    display: flex;
+    flex-direction: column;
 }
 
 /*Nav Bar*/
 nav{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    gap: 40px;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
     background-color: #F4933E;
-    padding: 20px;
+    width: 100%;
 }
+
+#nav-img{
+   width: 10vh;
+   height: auto;
+}
+
 
 nav a{
     text-decoration: none;
     color: rgb(0, 0, 0);
-    padding: 10px 15px;
-    font-size: 20px;
-    border-radius: 10px;
+    font-size: 2vw;
 }
 
-nav > a:first-child {
-    width: 5vw;
-    height: 3vh;
+#mobilenav {
+    display: flex;
+    width: 85vw;
+    flex-direction: row;
+    justify-content: space-around;
 }
+
+[alt="Paw Pal Logo"] {
+    width: 15vw;
+}
+
+/*Side note: you should almost never use pixels if you want a responsive layout 
+use vw(viewport width), vh(viewport height), or rem (root emphasis) -Rey*/
+
+
+/*Home Page*/
 #about{
     display: flex;
     flex-direction: column;
     background-color: #F4933E;
     text-align: center;
-    border-radius: 10px;
-    font-size: 25px;
+    border-radius: 1vh;
+    font-size: 2.5vh;
 }
 
 .head-container{
     background-color: #F4933E;
-    border-radius: 10px;
+    border-radius: 1vh;
     margin: 0 auto;
-    width: 50%;
+    width: 69.9vh;
 }
 
 header{
     background-image: url(elementor-placeholder-image.png);
-    padding: 15%;
+    padding: 30vh;
 }
 
-header h1, p, a{
+header h1,
+header p,
+header a{
     display: flex;
     flex-direction: column;
     text-align: center;
     
 }
 header h1{
-    font-size: 60px;
+    font-size: 6vh;
 }
 
 header p{
-    font-size: 30px;
+    font-size: 3vh;
 }
+
 header a{
     text-decoration: none;
     background-color: white;
     color: black;
-    padding:  15px 20px;
-    width: 20%;
-    border-radius: 10px;
+    padding:  1.5vh 2vh;
+    width: 15vh;
+    border-radius: 1vh;
     margin: 0 auto;
 }
 
@@ -77,10 +99,10 @@ header a{
     flex-direction: column;
     text-align: center;
     background-color: #F4933E;
-    font-size: 25px;
-    border-radius: 10px;
-    max-width: 40%;
-    margin-top:30px;
+    font-size: 2.5vh;
+    border-radius: 1vh;
+    width: 50vh;
+    margin-top:3vh;
 }
 
 #review-container{
@@ -88,15 +110,142 @@ header a{
     flex-direction: column;
     align-items: center;
     background-color: #F4933E;
-    width: 400px 100px;
+    width: 400vh 100vh;
     font-size: 25px;
 }
-.copyright{
+
+/*Create an Account and Sign in*/
+
+.account-container{
     background-color: #F4933E;
-    padding: 30px 20px;
-    font-size: 20px;
+    margin: 10vh 10vw;
+    padding: 20vh 20vw;    
 }
 
+.account-container h1{
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 4.5vh 1vw;
+    margin: 0 1vw;
+    border-radius: 1vh;
+}
+
+.create-acc{
+    display: flex;
+    flex-direction: column;
+    margin: 2vh 5vw;
+}
+
+.create-acc label{
+    font-size: 2vh; 
+    
+}
+
+
+
+.create-acc input{
+    padding: 1vh 4vw;
+    border: 1px solid #ccc;
+    border-radius: 1vh;
+    font-size: 2vh;
+    
+}
+
+.create-button{
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 1vh;
+    padding: 1.5vh;
+    margin-top: 1vh;
+    cursor: pointer;
+}
+
+
+.create-acc button{
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 1vh;
+    padding: 1.5vh;
+    margin-top: 1vh;
+    cursor: pointer;
+    font-size: 2vh;
+}
+
+.create-acc button:hover{
+    background-color: #ffc28d;
+}
+
+#password-row{
+    display: flex;
+    text-align: center;
+    gap: 22vw;
+}
+
+
+.have-acc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.have-acc a{
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #000000;
+    padding: .5vh  1vw;
+    border-radius: 1vh;
+}
+.have-acc a:hover{
+    background-color: #ffc28d;
+}
+
+.have-acc p:last-of-type{
+    font-size: 3vh;
+}
+
+.other-sign-up{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    gap: 2vw;
+    text-decoration: none;
+    font-size: 2vh;
+}
+
+.other-sign-up a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    gap:  2vh;
+    background-color: #ffffff;
+    color: black;
+    padding: 1vh 2vw;
+    border-radius: 1vh;
+}
+
+.other-sign-up a:hover{
+    background-color: #ffc28d;
+}
+
+.google-img,
+.facebook-img,
+.apple-img {
+    height: auto;
+    width: 2.4vh;
+}
+
+
+/* Map container*/
+
+#map{
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
 
 /*Your pets section of css*/
 
@@ -105,14 +254,95 @@ header a{
     display: flex;
     flex-wrap: wrap;
     background-color: #F4933E;
+    justify-content: flex-start;
 }
-#Ppage img {
-    width: 15vw;
-}
-#Ppage figure {
+
+#Ppage a, #Ppage figure {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;    
+}
+
+#Ppage img {
+    width: 10vw;
+    margin: 4vw 5vh;
+}
+
+#Ppage figure {
     background-color: #FFA74A;
-    width: 20vw;
+    margin: 1.5vh 2vw;
+}
+
+#Ppage figure:hover {
+    background-color: #ffb15e;
+}
+
+#Ppage a {
+    text-decoration: none;
+    color: black;
+}
+
+#Ppage p {
+    font-size: 1.5rem;
+    background-color: #BF4904;
+    padding: 2vh 2vw;
+    border: 0.1rem solid black;
+    border-radius: 0.2rem;
+}
+
+#Ppage p:hover {
+    background-color: #e67a3b;
+}
+
+/*PET INFORMATION PAGE*/
+#Pet-One h3{
+    font-family: Roboto;
+}
+/*Footer*/
+footer {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    background-color: #F4933E;
+}
+
+small {
+    width: 10vw;
+    font-size: 1vw;
+    margin: 2vh 0;
+}
+
+/*For tablets*/
+@media screen and (max-width:1024px){
+    /*Nav Note: include icon images of nav using :before*/
+    nav {
+        justify-content: flex-start;
+        order: 1;
+    }
+
+    #mobilenav {
+        display: flex;
+        width: 100vw;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    [alt="Paw Pal Logo"] {
+        display: none;
+    }
+
+    /*Your Pals page*/
+    #Ppage img {
+        width: 20vw;
+    }
+    #Ppage figure {
+        margin-inline: 0;
+    }
+}
+
+/*For phone screens*/
+@media screen and (max-width:640px) {
+    footer {
+        display: none;
+    }
 }
