@@ -15,7 +15,7 @@ nav{
     align-items: center;
     height: 10vh;
     background-color: #F4933E;
-    width: 100vw;
+    width: 100%;
 }
 
 #nav-img{
@@ -135,67 +135,96 @@ header a{
     align-items: center;    
 }
 
-/*Create an Account*/
+/*Create an Account and Sign in*/
 
 .account-container{
     background-color: #F4933E;
+    margin: 10vh 20vh;
+    padding: 20vh;
     
 }
 .account-container h1{
     display: flex;
     justify-content: center;
     background-color: #ffffff;
-    padding: 1vh 2vh;
-    margin-left: 80vh;
-    margin-right: 80vh;
+    padding: 3vh 2vh;
+    margin: 0 40vh;
     border-radius: 1vh;
 }
 
-#create-acc{
+.create-acc{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 2vh;
 }
 
-#create-acc label{
+.create-acc label{
     font-size: 2vh;
-    margin-right: 18vh;
-}
-
-#create-acc input{
-  padding: 1vh;
-  border: 1px solid #ccc;
-  border-radius: 1vh;
-  font-size: 2vh;
-}
-
-#create-button{
-  background-color: white;
-  color: black;
-  border: none;
-  border-radius: 1vh;
-  padding: 1.5vh;
-  margin-top: 1vh;
-  cursor: pointer;
+    margin-right: 23vh;
 }
 
 
-#create-acc button{
-  background-color: #ffffff;
-  color: #000000;
-  border: none;
-  border-radius: 1vh;
-  padding: 1.5vh;
-  margin-top: 1vh;
-  cursor: pointer;
-  font-size: 2vh;
+
+.create-acc input{
+    padding: 1vh 4vh;
+    border: 1px solid #ccc;
+    border-radius: 1vh;
+    font-size: 2vh;
 }
+
+.create-button{
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 1vh;
+    padding: 1.5vh;
+    margin-top: 1vh;
+    cursor: pointer;
+}
+
+
+.create-acc button{
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 1vh;
+    padding: 1.5vh;
+    margin-top: 1vh;
+    cursor: pointer;
+    font-size: 2vh;
+}
+
+.create-acc button:hover{
+    background-color: #ffc28d;
+}
+
+#password-row{
+    display: flex;
+    text-align: center;
+    
+}
+
 
 .have-acc{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.have-acc a{
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #000000;
+    padding: .5vh  1vh;
+    border-radius: 1vh;
+}
+.have-acc a:hover{
+    background-color: #ffc28d;
+}
+
+.have-acc p:last-of-type{
+    font-size: 3vh;
 }
 
 .other-sign-up{
@@ -219,6 +248,10 @@ header a{
     border-radius: 1vh;
 }
 
+.other-sign-up a:hover{
+    background-color: #ffc28d;
+}
+
 .google-img,
 .facebook-img,
 .apple-img {
@@ -230,22 +263,33 @@ header a{
 /* Map container*/
 
 #map{
-  background-image: url(images/Map.jpg);
-  background-repeat: none;
-  background-size: cover;
-  height: 100vh;
-  padding: 0;
-  margin: 0;
+    background-image: url(images/Map.jpg);
+    background-repeat: none;
+    background-size: cover;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
 }
 
 #search-bar{
     display: flex;
-    height: 20px;
-
+    height: 5vh;
+    margin-left: 10vh;
+    margin-top: 2vh;
 }
 
 
-
+#search-bar input{
+    background-image: url(images/search.png);
+    background-size: 5vh;
+    background-repeat: no-repeat;
+    background-position: right;
+    position: relative;
+    background-color: white;
+    border:none;
+    padding: 0 4vh;
+    font-size: 2vh;
+}
 
 /* Pets Page*/
 
