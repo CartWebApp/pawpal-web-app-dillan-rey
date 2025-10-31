@@ -43,6 +43,9 @@ nav a{
 
 /*Side note: you should almost never use pixels if you want a responsive layout 
 use vw(viewport width), vh(viewport height), or rem (root emphasis) -Rey*/
+
+
+/*Home Page*/
 #about{
     display: flex;
     flex-direction: column;
@@ -110,20 +113,13 @@ header a{
     width: 400vh 100vh;
     font-size: 25px;
 }
-.copyright{
-    text-align: center;
-    background-color: #F4933E;
-    padding: 3vh 2vh;
-    font-size: 2vh;
-    width: 100%;
-}
 
 /*Create an Account*/
 
 .account-container{
     background-color: #F4933E;
-    
 }
+
 .account-container h1{
     display: flex;
     justify-content: center;
@@ -265,6 +261,24 @@ button{
 
 #Ppage p:hover {
     background-color: #e67a3b;
+}
+
+/*PET INFORMATION PAGE*/
+#Pet-One h3{
+    font-family: Roboto;
+}
+/*Footer*/
+footer {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    background-color: #F4933E;
+}
+
+small {
+    width: 10vw;
+    font-size: 1vw;
+    margin: 2vh 0;
 }
 
 /*For tablets*/
