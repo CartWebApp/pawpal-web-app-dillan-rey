@@ -139,9 +139,11 @@ header a{
 
 .create-acc label{
     font-size: 2vh; 
-    
 }
 
+#login {
+    font-family: Roboto;
+}
 
 
 .create-acc input{
@@ -180,10 +182,16 @@ header a{
 
 #password-row{
     display: flex;
-    text-align: center;
-    gap: 22vw;
+    justify-content: space-between;
 }
 
+#password-row a{
+    text-decoration: none;
+    color: #000000;
+}
+#password-row a:hover{
+    color: #ffcca0;
+}
 
 .have-acc{
     display: flex;
@@ -268,9 +276,6 @@ header a{
     border:none;
     padding: 0 4vh;
     font-size: 2vh;
-}
-
-/* Pets Page*/
 }
 
 /*Your pets section of css*/
