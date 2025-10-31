@@ -27,18 +27,25 @@
         
     <h1>Create an Account</h1>
 
-    <form id="create-acc" >
-        <label for="email">Email</label>
-        <input type="text" name="email">
-        <label for="password">Password</label>
-        <input type="text" name="password">
-        <button type="submit" id="create-button">Create Account</button>
-    </form>
+<form class="create-acc">
+  <label for="email">Email</label>
+  <input type="text" name="email">
+
+  <div id="password-row">
+    <label for="password">Password</label>
+  </div>
+  <input type="password" name="password">
+  <button type="submit" class="create-button">Create Account</button>
+</form>
+
 
         <section class="have-acc">
             <p>Already have an account?</p>
             <a href="login.html">Sign In</a>
+            <p>Or</p>
         </section>
+
+                
         
             <div class="other-sign-up">
                 <a href="#">
@@ -46,11 +53,11 @@
                     Google
                 </a>
                 <a href="#">
-                    <img src="images/facebook-icon-free-png.png" class="facebook-img">
+                    <img src="images/Facebook.png" class="facebook-img">
                     Facebook
                 </a>
                 <a href="#">
-                    <img src="images/160139.png" class="apple-img">
+                    <img src="images/apple.png" class="apple-img">
                     Apple
                 </a>
             </div>
