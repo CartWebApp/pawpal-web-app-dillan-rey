@@ -51,6 +51,13 @@ nav a{
     width: 15vw;
 }
 
+.SUBMIT {
+    background: none;
+    border: none;
+}
+.SUBMIT img {
+    height: 1vh;
+}
 /*Side note: you should almost never use pixels if you want a responsive layout 
 use vw(viewport width), vh(viewport height), or rem (root emphasis) -Rey*/
 
