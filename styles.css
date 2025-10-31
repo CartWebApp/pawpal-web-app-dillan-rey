@@ -43,6 +43,9 @@ nav a{
 
 /*Side note: you should almost never use pixels if you want a responsive layout 
 use vw(viewport width), vh(viewport height), or rem (root emphasis) -Rey*/
+
+
+/*Home Page*/
 #about{
     display: flex;
     flex-direction: column;
@@ -110,37 +113,13 @@ header a{
     width: 400vh 100vh;
     font-size: 25px;
 }
-.copyright{
-    text-align: center;
-    background-color: #F4933E;
-    padding: 3vh 2vh;
-    font-size: 2vh;
-    width: 100%;
-}
-
-
-/*Your pets section of css*/
-
-#Ppage {
-    margin-top: 5vh;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #F4933E;
-    justify-content: space-around;
-}
-
-#Ppage a, #Ppage figure {
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
-}
 
 /*Create an Account*/
 
 .account-container{
     background-color: #F4933E;
-    
 }
+
 .account-container h1{
     display: flex;
     justify-content: center;
@@ -235,7 +214,24 @@ button{
 
 #search-bar{
     display: flex;
-    
+}
+
+/*Your pets section of css*/
+
+#Ppage {
+    margin-top: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F4933E;
+    justify-content: flex-start;
+}
+
+#Ppage a, #Ppage figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
 #Ppage img {
     width: 10vw;
     margin: 4vw 5vh;
@@ -243,6 +239,7 @@ button{
 
 #Ppage figure {
     background-color: #FFA74A;
+    margin: 1.5vh 2vw;
 }
 
 #Ppage figure:hover {
@@ -266,7 +263,25 @@ button{
     background-color: #e67a3b;
 }
 
-/*For mobile/tablets*/
+/*PET INFORMATION PAGE*/
+#Pet-One h3{
+    font-family: Roboto;
+}
+/*Footer*/
+footer {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    background-color: #F4933E;
+}
+
+small {
+    width: 10vw;
+    font-size: 1vw;
+    margin: 2vh 0;
+}
+
+/*For tablets*/
 @media screen and (max-width:1024px){
     /*Nav Note: include icon images of nav using :before*/
     nav {
@@ -291,5 +306,12 @@ button{
     }
     #Ppage figure {
         margin-inline: 0;
+    }
+}
+
+/*For phone screens*/
+@media screen and (max-width:640px) {
+    footer {
+        display: none;
     }
 }
