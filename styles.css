@@ -242,35 +242,9 @@ header a{
 /* Map container*/
 
 #map{
-    background-image: url(images/Map.jpg);
-    background-repeat: none;
-    background-size: cover;
     height: 100vh;
     padding: 0;
     margin: 0;
-}
-
-#search-bar{
-    display: flex;
-    height: 5vh;
-    margin-left: 10vh;
-    margin-top: 2vh;
-}
-
-
-#search-bar input{
-    background-image: url(images/search.png);
-    background-size: 5vh;
-    background-repeat: no-repeat;
-    background-position: right;
-    position: relative;
-    background-color: white;
-    border:none;
-    padding: 0 4vh;
-    font-size: 2vh;
-}
-
-/* Pets Page*/
 }
 
 /*Your pets section of css*/
