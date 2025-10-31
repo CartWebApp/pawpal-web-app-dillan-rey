@@ -23,11 +23,14 @@ nav{
    height: auto;
 }
 
-
 nav a{
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-size: 2vw;
+}
+
+#NavProfileIcon {
+    height: 8vh;
 }
 
 #mobilenav {
@@ -35,6 +38,13 @@ nav a{
     width: 85vw;
     flex-direction: row;
     justify-content: space-around;
+}
+
+#NavSecondary {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 30vw;
 }
 
 [alt="Paw Pal Logo"] {
