@@ -51,7 +51,7 @@
 
                 
         
-            <div class="other-sign-up">
+            <section class="other-sign-up">
                 <a href="#">
                     <img src="images/Google.png" class="google-img">
                     Google
@@ -64,7 +64,7 @@
                     <img src="images/apple.png" class="apple-img">
                     Apple
                 </a>
-            </div>
+            </section>
 </div>
 </main>
     <footer>
@@ -75,20 +75,28 @@
    
   <!-- Overlay -->
   <dialog id="reset-ps">
-    <section>
-            <h2>Reset Your Password</h2>
+  <section>
+    <header>
+      <h2>Reset Your Password</h2>
+    </header>
 
-        <form> 
-            <label for="new-ps">New Password</label>
-            <input type="text" name="new-ps">
-            <label for="re-enter-new-ps">Re-Enter New Password</label>
-            <input type="text" name="re-enter-new-ps">
-        </form>
+    <form>
+      <label for="new-ps">New Password</label>
+      <input type="password" id="new-ps" name="new-ps">
 
-    </section>
-  </dialog>
+      <label for="re-enter-new-ps">Re-enter New Password</label>
+      <input type="password" id="re-enter-new-ps" name="re-enter-new-ps">
+
+      <menu>
+        <button type="button" id="cancel-btn">Cancel</button>
+        <button type="submit" id="submit-btn">Submit</button>
+      </menu>
+    </form>
+  </section>
+</dialog>
 
 
 
+<script src="script.js"></script>
 </body>
 </html>
