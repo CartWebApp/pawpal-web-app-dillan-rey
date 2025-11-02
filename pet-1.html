@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sniglet:wght@400;800&display=swap" rel="stylesheet"></head>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
 <body>
     <nav>
         <a href="index.html"><img src="/images/PawPalLogo.png" alt="Paw Pal Logo"></a>
@@ -39,6 +41,9 @@
             <h3>Pet Activity</h3>
             <figure>
                 Bar graph
+                <div style="width: 100%; max-width: 600px;">
+                    <canvas id="myWeekChart"></canvas>
+                </div>
             </figure>
         </section>
         <section>
@@ -59,5 +64,6 @@
     <footer>
          <small>&copy; PawPal 2025.</small>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
