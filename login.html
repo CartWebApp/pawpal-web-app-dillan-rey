@@ -75,22 +75,23 @@
    
   <!-- Overlay -->
   <dialog id="reset-ps">
-  <section>
-    <header>
+  <section id="overlay-cont">
+    <header id="overlay-head">
       <h2>Reset Your Password</h2>
     </header>
 
-    <form>
+    <form id="reset-form">
       <label for="new-ps">New Password</label>
-      <input type="password" id="new-ps" name="new-ps">
+      <input type="text" id="new-ps" name="new-ps">
 
       <label for="re-enter-new-ps">Re-enter New Password</label>
       <input type="password" id="re-enter-new-ps" name="re-enter-new-ps">
 
       <menu>
         <button type="button" id="cancel-btn">Cancel</button>
-        <button type="submit" id="submit-btn">Submit</button>
+        <button type="button" id="reset-btn">Reset Password</button>
       </menu>
+
     </form>
   </section>
 </dialog>

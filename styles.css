@@ -16,6 +16,7 @@ nav{
     height: 10vh;
     background-color: #F4933E;
     width: 100%;
+    margin: 0;
 }
 
 #nav-img{
@@ -59,31 +60,33 @@ use vw(viewport width), vh(viewport height), or rem (root emphasis) -Rey*/
     background-color: #F4933E;
     border-radius: 1vh;
     margin: 0 auto;
-    width: 69.9vh;
+    width: 35vw;
 }
 
-header{
-    background-image: url(elementor-placeholder-image.png);
+#main-head{
+    background-image: url(images/Hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 30vh;
 }
 
-header h1,
-header p,
-header a{
+#main-head h1,
+#main-head p,
+#main-head a{
     display: flex;
     flex-direction: column;
     text-align: center;
     
 }
-header h1{
+#main-head h1{
     font-size: 6vh;
 }
 
-header p{
+#main-head p{
     font-size: 3vh;
 }
 
-header a{
+#main-head a{
     text-decoration: none;
     background-color: white;
     color: black;
@@ -239,6 +242,75 @@ header a{
     width: 2.4vh;
 }
 
+/* Overlay Forgot Password*/
+
+#reset-ps{
+    background-color:#F4933E;
+    transform: scale(.95);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    border: none;
+    padding:15vh 20vw;
+}
+
+#overlay-cont{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 3vh;
+     font-family: Roboto;
+     font-size: 2.5vh;
+}
+
+#overlay-cont h2{
+    background-color: #ffffff;
+    padding: 5vh 10vw;
+    border-radius: 1vh;
+}
+
+#reset-form label{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#reset-form input{
+    padding: 1vh 4vw;
+    border: 1px solid #ccc;
+    border-radius: 1vh;
+    font-size: 2vh;
+}
+
+#reset-form button{
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 1vh;
+    padding: 1.5vh;
+    margin-top: 3vh;
+    cursor: pointer;
+    font-size: 2vh
+}
+
+#reset-form button:hover{
+    background-color: #ffc28d;
+}
+
+#cancel-btn,
+#reset-btn{
+    background: none;
+    padding: 1vh .5vw;
+}
+
+
+#reset-ps.showing{
+    opacity: 1;
+    transform: scale(1);
+}
+
+#reset-ps.hiding{
+    opacity: 0;
+    transform: scale(0.95);
+}
+
 
 /* Map container*/
 
@@ -326,7 +398,7 @@ header a{
 footer {
     display: flex;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     background-color: #F4933E;
 }
 
@@ -346,7 +418,7 @@ small {
 
     #mobilenav {
         display: flex;
-        width: 100vw;
+        width: 100%;
         flex-direction: row;
         justify-content: space-around;
     }
