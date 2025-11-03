@@ -381,8 +381,14 @@ use vw(viewport width), vh(viewport height), or rem (root emphasis) -Rey*/
     display: flex;
     width:100%;
     justify-content: center;
-    margin: 5vh 0;
-  
+    margin: 10vh 0;
+}
+
+#CALENDAR {
+    height: 80vh;
+    width: 70vw;
+}
+
  #search-bar {
    display: flex;
     height: 5vh;
@@ -785,6 +791,11 @@ small {
         width:80vw;
         height: 65vh;
     }
+    /*Calendar*/
+        #CALENDAR {
+            height: 70vh;
+            width: 80vw;
+        }
 }
 
 /*For phone screens*/
@@ -817,20 +828,24 @@ small {
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-    }
-
-    #mobilenav a:last-child::before {
-        background-image: url(images/profile.png);
         width: 10vw;
         height: 5vh;
         margin-top: 1vh;
     }
 
-    #mobilenav a:last-child {
+    #mobilenav a {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-bottom: 1vh;
+    }
+    
+    #mobilenav a:last-child::before {
+        background-image: url(images/profile.png);
+    }
+
+    #mobilenav a:nth-child(2)::before {
+        background-image: url(images/Pin.png);
     }
 
     [alt="Paw Pal Logo"] {
@@ -870,6 +885,10 @@ small {
         margin: 2vh 2vw;
     }
 
+    .modal-content {
+        width: 90%;
+        max-width: 80vw;
+    }
     /*Pet Info*/
     #pet-header {
         margin: 0;
@@ -900,5 +919,11 @@ small {
     #PETINFO,
     #myWeekChart {
     width: 80vw;
-}
+    }
+
+    /*Calendar*/
+    #CALENDAR {
+        height: 60vh;
+        width: 90vw;
+    }
 }
