@@ -1,3 +1,3 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/m8Hl84q3)
 
-General Notes 10/31 (Rey): Fix row issue with Pet icons in Your Pets Page
+To do before class: update nav icons in mobile display and hopefully finish pals page?
