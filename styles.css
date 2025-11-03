@@ -79,28 +79,28 @@ use vw(viewport width), vh(viewport height), or rem (root emphasis) -Rey*/
     width: 69.9vh;
 }
 
-header{
+#index-header{
     background-image: url(elementor-placeholder-image.png);
     padding: 30vh;
 }
 
-header h1,
-header p,
-header a{
+#index-header h1,
+#index-header p,
+#index-header a{
     display: flex;
     flex-direction: column;
     text-align: center;
     
 }
-header h1{
+#index-header h1{
     font-size: 6vh;
 }
 
-header p{
+#index-header p{
     font-size: 3vh;
 }
 
-header a{
+#index-header a{
     text-decoration: none;
     background-color: white;
     color: black;
@@ -158,8 +158,6 @@ header a{
     font-size: 2vh; 
     
 }
-
-
 
 .create-acc input{
     padding: 1vh 4vw;
@@ -255,7 +253,6 @@ header a{
     width: 2.4vh;
 }
 
-
 /* Map container*/
 
 #map{
@@ -312,20 +309,119 @@ header a{
 }
 
 /*PET INFORMATION PAGE*/
-#Pet-One h3{
+
+#pet-header, 
+#pet-sub-header {
+    display: flex;
+    align-items: center;
+}
+
+[alt="Back"] {
+    width: 5vw;
+    margin: 7vh 2vw;
+}
+
+#PETICON {
+    width: 10vw;
+}
+
+#Pet-One figure {
+    margin: 0;
+}
+
+.tracker-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 90vw;
+    margin: 20px auto;
+    padding: 25px;
+    background-color: #D6AF5C;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+#log-form button,
+#reminder-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #F4933E;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#log-form button:hover,
+#reminder-form button:hover {
+    background-color: #BF4904;
+}
+
+.delete-btn, 
+.delete-reminder-btn {
+    background-color: #ff3b30;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.delete-btn:hover,
+.delete-reminder-btn:hover {
+    background-color: #c00;
+}
+
+#delete-all-btn {
+    color: #ff3b30;
+    border: 1px solid #ff3b30;
+    border-radius: 6px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    display: none;
+}
+
+#delete-all-btn:hover {
+    background-color: #fff0f0;
+}
+
+#log-form input[type="text"],
+#log-form input[type="datetime-local"],
+#log-form select,
+#reminder-form input[type="text"], 
+#reminder-form input[type="time"] {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
     font-family: Roboto;
 }
+
+.history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /*Footer*/
 footer {
     display: flex;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     background-color: #F4933E;
+    margin-top: 5vh;
 }
 
 small {
     width: 10vw;
-    font-size: 1vw;
+    font-size: 1rem;
     margin: 2vh 0;
 }
 
@@ -354,6 +450,19 @@ small {
     }
     #Ppage figure {
         margin-inline: 0;
+    }
+    
+    /*Pet Info Page*/
+    .tracker-container {
+        flex-direction: column;
+    }
+
+    #log-form input[type="text"],
+    #log-form input[type="datetime-local"],
+    #log-form select,
+    #reminder-form input[type="text"], 
+    #reminder-form input[type="time"] {
+    width: 60%;
     }
 }
 

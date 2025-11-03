@@ -23,33 +23,99 @@
         </div>
     </nav>
     <main id="Pet-One">
+        <header id="pet-header">
         <a href="pets.html">
             <img src="images/Back.png" alt="Back">
         </a>
-        <figure>
-            <img src="images/dogicon.png" alt="Dog Image Placeholder">
-            <h2>Pet Name #1</h2>
+        <figure id="pet-sub-header">
+            <img src="images/dogicon.png" alt="Dog Image Placeholder" id="PETICON">
+            <h1>Pet Name #1</h1>
         </figure>
+    </header>
         <section>
             <h3>Pet Information</h3>
-            <p>Animal:</p>
-            <p>Birthday:</p>
-            <p>Weight:</p>
-            <p>Medical Conditions:</p>
+            <form id="PETINFO">
+                <div>
+                    <label for="animal">Animal:</label>
+                    <input type="text" id="animal" placeholder="e.g., Dog or Cat">
+                </div>
+                <div>
+                    <label for="Birthday">Birthday:</label>
+                    <input type="date" id="Birthday">
+                </div>
+                <div>
+                    <label for="Weight">Weight:</label>
+                    <input type="text" id="Weight" placeholder="e.g., 100lb or 25kg">
+                </div>
+            </form>
+            <form id="PETINFOTWO">
+                <div>
+                    <label for="MEDCOND">Medical Conditions:</label>
+                    <input type="text" id="MEDCOND" placeholder="e.g., Overweight or Underweight">
+                </div>
+            </form>
         </section>
         <section>
             <h3>Pet Activity</h3>
             <figure>
-                Bar graph
                 <div style="width: 100%; max-width: 600px;">
                     <canvas id="myWeekChart"></canvas>
                 </div>
+                <p>Total Miles Walked: </p>
+                <p>Total Calories Burned:</p>
             </figure>
         </section>
-        <section>
-            <h3>Food and Medication</h3>
+        <section class="tracker-container">
+            <figure>
+                <h3>Daily Reminders</h3>
+                <form id="reminder-form">
+                <div class="form-row">
+                <div>
+                    <label for="reminder-name">Reminder Name:</label>
+                    <input type="text" id="reminder-name" placeholder="e.g., Breakfast" required>
+                </div>
+                <div>
+                    <label for="reminder-time">Time:</label>
+                    <input type="time" id="reminder-time" required>
+                </div>
+                </div>
+                <button type="submit">Add Reminder</button>
+                </form>
+                <ul id="reminders-list">
+                </ul>
             </figure>
-                Food and meds things
+            <figure>
+                <h3>Log a New Event</h3>
+                <form id="log-form">
+                <div>
+                    <label for="event-type">Type:</label>
+                    <select id="event-type" required>
+                        <option value="Food">Food</option>
+                        <option value="Medicine">Medicine</option>
+                    </select>
+                </div>
+      
+                <div>
+                    <label for="event-brand">Brand/Name:</label>
+                    <input type="text" id="event-brand" placeholder="e.g., Kibble" required>
+                </div>
+
+                <div>
+                    <label for="event-time">Time:</label>
+                    <input type="datetime-local" id="event-time" required>
+                </div>
+      
+                <button type="submit">Save Event</button>
+                </form>
+            </figure>
+            <figure>
+                <div class="history-header">
+                    <h2>Event History</h2>
+                    <button id="delete-all-btn">Delete All</button>
+                </div>
+    
+                <ul id="history-list">
+                </ul>
             </figure>
         </section>
         <section>
