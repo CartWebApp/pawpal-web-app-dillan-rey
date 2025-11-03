@@ -381,8 +381,14 @@ use vw(viewport width), vh(viewport height), or rem (root emphasis) -Rey*/
     display: flex;
     width:100%;
     justify-content: center;
-    margin: 5vh 0;
-  
+    margin: 10vh 0;
+}
+
+#CALENDAR {
+    height: 80vh;
+    width: 70vw;
+}
+
  #search-bar {
    display: flex;
     height: 5vh;
@@ -475,7 +481,7 @@ use vw(viewport width), vh(viewport height), or rem (root emphasis) -Rey*/
     border-radius: 8px;
     border: 2px solid #BF4904;
     width: 90%;
-    max-width: 500px;
+    max-width: 40vw;
     position: relative;
     font-family: 'Open Sans', sans-serif;
 }
@@ -488,6 +494,7 @@ use vw(viewport width), vh(viewport height), or rem (root emphasis) -Rey*/
     font-weight: bold;
     color: #BF4904;
     cursor: pointer;
+    margin: 2vh 0 5vh 0;
 }
 
 .close-button:hover {
@@ -501,7 +508,7 @@ use vw(viewport width), vh(viewport height), or rem (root emphasis) -Rey*/
 }
 
 #addPetForm label {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     font-weight: 600;
 }
 
@@ -526,7 +533,7 @@ use vw(viewport width), vh(viewport height), or rem (root emphasis) -Rey*/
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin-top: 10px;
+    margin: 2vh 0 4vh 0;
 }
 
 #addPetForm button:hover {
@@ -784,6 +791,11 @@ small {
         width:80vw;
         height: 65vh;
     }
+    /*Calendar*/
+        #CALENDAR {
+            height: 70vh;
+            width: 80vw;
+        }
 }
 
 /*For phone screens*/
@@ -810,24 +822,30 @@ small {
         flex-direction: row;
         justify-content: space-around;
     }
-    
-    #mobilenav a:last-child::before {
-        content:"";
-        background-image: url(images/profile.png);
+    #mobilenav a::before {
+        content: "";
         display: block;
-        width: 10vw;
-        height: 5vh;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        width: 10vw;
+        height: 5vh;
         margin-top: 1vh;
     }
 
-    #mobilenav a:last-child {
+    #mobilenav a {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-bottom: 1vh;
+    }
+    
+    #mobilenav a:last-child::before {
+        background-image: url(images/profile.png);
+    }
+
+    #mobilenav a:nth-child(2)::before {
+        background-image: url(images/Pin.png);
     }
 
     [alt="Paw Pal Logo"] {
@@ -867,6 +885,10 @@ small {
         margin: 2vh 2vw;
     }
 
+    .modal-content {
+        width: 90%;
+        max-width: 80vw;
+    }
     /*Pet Info*/
     #pet-header {
         margin: 0;
@@ -897,5 +919,11 @@ small {
     #PETINFO,
     #myWeekChart {
     width: 80vw;
-}
+    }
+
+    /*Calendar*/
+    #CALENDAR {
+        height: 60vh;
+        width: 90vw;
+    }
 }
