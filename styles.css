@@ -13,7 +13,7 @@ nav{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 10vh;
+    height: auto;
     background-color: #F4933E;
     width: 100%;
 }
@@ -29,8 +29,20 @@ nav a{
     font-size: 2vw;
 }
 
-#NavProfileIcon {
+[alt="Account Profile"] {
     height: 8vh;
+    width: 8vh;
+}
+
+#NAVprofile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 2vw;
+}
+
+#NAVprofile p {
+    display: none;
 }
 
 #mobilenav {
@@ -40,23 +52,9 @@ nav a{
     justify-content: space-around;
 }
 
-#NavSecondary {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 30vw;
-}
-
 [alt="Paw Pal Logo"] {
     width: 15vw;
-}
-
-.SUBMIT {
-    background: none;
-    border: none;
-}
-.SUBMIT img {
-    height: 1vh;
+    margin-top: 1vh;
 }
 /*Side note: you should almost never use pixels if you want a responsive layout 
 use vw(viewport width), vh(viewport height), or rem (root emphasis) -Rey*/
@@ -259,6 +257,13 @@ use vw(viewport width), vh(viewport height), or rem (root emphasis) -Rey*/
     height: 100vh;
     padding: 0;
     margin: 0;
+}
+
+#BIGCAL {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 5vh 0;
 }
 
 /*Your pets section of css*/
@@ -579,9 +584,12 @@ small {
     /*Your Pals page*/
     #Ppage img {
         width: 20vw;
-    }
+        margin: 5vh 4vw;
+    } 
+    
     #Ppage figure {
         margin-inline: 0;
+        margin: 2vh 2vw;
     }
     
     /*Pet Info Page*/
@@ -635,8 +643,42 @@ small {
         justify-content: space-around;
     }
     
+    #mobilenav a:last-child::before {
+        content:"";
+        background-image: url(images/profile.png);
+        display: block;
+        width: 6vw;
+        height: 6vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-bottom: 1vh;
+    }
+
+    #mobilenav a:last-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     [alt="Paw Pal Logo"] {
         display: none;
     }
 
+    #NAVprofile {
+        display: none;
+    }
+    /*Your Pets Page*/
+    #Ppage {
+        margin-bottom: 5vh;
+    }
+
+    #Ppage img {
+        width: 35vw;
+        margin: 5vh 4vw;
+    } 
+    
+    #Ppage figure {
+        margin-inline: 0;
+        margin: 2vh 2vw;
+    }
 }
