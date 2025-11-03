@@ -34,8 +34,9 @@
             <img src="images/dogicon.png" alt="Dog Image Placeholder" id="PETICON">
             <h1>Pet Name #1</h1>
         </figure>
-    </header>
-        <section>
+        </header>
+        <div id="PI-IG">
+        <section class="PI-tworow">
             <h3>Pet Information</h3>
             <form id="PETINFO">
                 <div>
@@ -50,24 +51,21 @@
                     <label for="Weight">Weight:</label>
                     <input type="text" id="Weight" placeholder="e.g., 100lb or 25kg">
                 </div>
-            </form>
-            <form id="PETINFOTWO">
                 <div>
                     <label for="MEDCOND">Medical Conditions:</label>
                     <input type="text" id="MEDCOND" placeholder="e.g., Overweight or Underweight">
                 </div>
             </form>
         </section>
-        <section>
+        <section class="PI-tworow">
             <h3>Pet Activity</h3>
             <figure>
-                <div style="width: 100%; max-width: 600px;">
-                    <canvas id="myWeekChart"></canvas>
-                </div>
-                <p>Total Miles Walked: </p>
-                <p>Total Calories Burned:</p>
+                <canvas id="myWeekChart"></canvas>
+                <p>Total Miles Walked: 19.6mi</p>
+                <p>Total Calories Burned: 500kcal</p>
             </figure>
         </section>
+        </div>
         <section class="tracker-container">
             <figure class="PETINFOFORM">
                 <h3>Daily Reminders</h3>
