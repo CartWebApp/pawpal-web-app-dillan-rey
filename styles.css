@@ -13,7 +13,7 @@ nav{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 10vh;
+    height: auto;
     background-color: #F4933E;
     width: 100%;
 }
@@ -23,11 +23,30 @@ nav{
    height: auto;
 }
 
-
 nav a{
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-size: 2vw;
+}
+
+[alt="Account Profile"] {
+    height: 8vh;
+    width: 8vh;
+}
+
+#NAVprofile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 2vw;
+}
+
+#NAVprofile p,
+#Pmobileheader,
+#PETFINDER,
+#CalHeader,
+#PalsH {
+    display: none;
 }
 
 #mobilenav {
@@ -39,8 +58,8 @@ nav a{
 
 [alt="Paw Pal Logo"] {
     width: 15vw;
+    margin-top: 1vh;
 }
-
 /*Side note: you should almost never use pixels if you want a responsive layout 
 use vw(viewport width), vh(viewport height), or rem (root emphasis) -Rey*/
 
@@ -62,28 +81,28 @@ use vw(viewport width), vh(viewport height), or rem (root emphasis) -Rey*/
     width: 69.9vh;
 }
 
-header{
+#index-header{
     background-image: url(elementor-placeholder-image.png);
     padding: 30vh;
 }
 
-header h1,
-header p,
-header a{
+#index-header h1,
+#index-header p,
+#index-header a{
     display: flex;
     flex-direction: column;
     text-align: center;
     
 }
-header h1{
+#index-header h1{
     font-size: 6vh;
 }
 
-header p{
+#index-header p{
     font-size: 3vh;
 }
 
-header a{
+#index-header a{
     text-decoration: none;
     background-color: white;
     color: black;
@@ -141,8 +160,6 @@ header a{
     font-size: 2vh; 
     
 }
-
-
 
 .create-acc input{
     padding: 1vh 4vw;
@@ -238,13 +255,19 @@ header a{
     width: 2.4vh;
 }
 
-
 /* Map container*/
 
 #map{
     height: 100vh;
     padding: 0;
     margin: 0;
+}
+
+#BIGCAL {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 5vh 0;
 }
 
 /*Your pets section of css*/
@@ -294,30 +317,358 @@ header a{
     background-color: #e67a3b;
 }
 
-/*PET INFORMATION PAGE*/
-#Pet-One h3{
-    font-family: Roboto;
+/* Add Pet Overlay */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
 }
+
+.modal-overlay.hidden {
+    display: none;
+}
+
+.modal-content {
+    background-color: #FFA74A;
+    padding: 2rem;
+    border-radius: 8px;
+    border: 2px solid #BF4904;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #BF4904;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: black;
+}
+
+#addPetForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#addPetForm label {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+#addPetForm input[type="text"],
+#addPetForm input[type="number"],
+#addPetForm input[type="file"],
+#addPetForm textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #BF4904;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#addPetForm button {
+    background-color: #BF4904;
+    color: white;
+    font-family: 'Sniglet', sans-serif;
+    font-size: 1.2rem;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#addPetForm button:hover {
+    background-color: #e67a3b;
+}
+
+/*PET INFORMATION PAGE*/
+#pet-header {
+    margin: 4vh 0;
+}
+
+#pet-header, 
+#pet-sub-header {
+    display: flex;
+    align-items: center;
+}
+
+#Pet-One figure {
+    margin: 0;
+}
+
+#pet-sub-header {
+    width: 40vw;
+    justify-content: space-around;
+    background-color: #BF4904;
+    border-radius: 10px;
+    padding: 2vh 0;
+}
+
+[alt="Back"] {
+    width: 5vw;
+    margin: 7vh 2vw;
+    margin-right: 22vw;
+}
+
+#PETICON {
+    width: 10vw;
+}
+
+#PETINFO,
+#myWeekChart {
+    width: 40vw;
+}
+
+.tracker-container {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    padding: 2vh 1vw;
+    margin: 4% 4%;
+    background-color: #E7D6A1;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.PETINFOFORM {
+    width: 25vw;
+}
+
+#log-form button,
+#reminder-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #F4933E;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#log-form button:hover,
+#reminder-form button:hover {
+    background-color: #BF4904;
+}
+
+.delete-btn, 
+.delete-reminder-btn {
+    background-color: #ff3b30;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 2vh;
+}
+
+.delete-btn:hover,
+.delete-reminder-btn:hover {
+    background-color: #c00;
+}
+
+#delete-all-btn {
+    color: #ff3b30;
+    border: 1px solid #ff3b30;
+    border-radius: 6px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    display: none;
+}
+
+#delete-all-btn:hover {
+    background-color: #fff0f0;
+}
+
+#log-form input[type="text"],
+#log-form input[type="datetime-local"],
+#log-form select,
+#reminder-form input[type="text"], 
+#reminder-form input[type="time"],
+#PETINFO input[type="text"],
+#PETINFO input[type="date"] {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Roboto;
+    margin: 1vh 0 3vh 0;
+}
+
+.history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#history-list,
+#reminders-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 2vh;
+}
+
+#history-list li, #reminders-list li {
+    background-color: #d6af5c;
+    border: 1px solid #BF4904;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#history-list .empty-message, #reminders-list .empty-message {
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    font-style: italic;
+    justify-content: center;
+}
+
+.reminder-time {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.reminder-name {
+    margin: 0 2vw;
+}
+
+.PI-tworow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 44.5vw;
+    background-color: #E7D6A1;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+#PI-MAP,
+#PI-DATE {
+    width:40vw;
+    height: 65vh;
+    margin: 3vh 0;
+    border-radius: 10px;
+    border:solid 1px #777;
+}
+
+#PI-MC, #PI-IG {
+    display: flex;
+    justify-content: space-around;
+}
+
 /*Footer*/
 footer {
     display: flex;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     background-color: #F4933E;
+    margin-top: 5vh;
 }
 
 small {
-    width: 10vw;
-    font-size: 1vw;
-    margin: 2vh 0;
+    font-size: 1rem;
+    margin: 4vh 0;
 }
 
 /*For tablets*/
 @media screen and (max-width:1024px){
+
+    /*Your Pals page*/
+    #Ppage img {
+        width: 20vw;
+        margin: 5vh 4vw;
+    } 
+    
+    #Ppage figure {
+        margin-inline: 0;
+        margin: 2vh 2vw;
+    }
+    
+    /*Pet Info Page*/
+    .tracker-container {
+        flex-direction: column;
+    }
+    #PETINFO,
+    #myWeekChart,
+    #pet-sub-header {
+        width: 60vw;
+    }
+
+    [alt="Back"] {
+        margin-right: 12vw;
+    }
+
+    .PETINFOFORM, 
+    #reminder-form input[type="text"], 
+    #reminder-form input[type="time"],
+    #log-form input[type="text"],
+    #log-form input[type="datetime-local"],
+    #log-form select {
+    width: 88vw;
+    }
+
+    .PI-tworow {
+        width: 90vw;
+        margin: 4vh 0;
+    }
+
+    #PI-MC, #PI-IG {
+        flex-direction: column;
+        align-items: center;
+    }
+    #PI-MAP,
+    #PI-DATE {
+        width:80vw;
+        height: 65vh;
+    }
+}
+
+/*For phone screens*/
+@media screen and (max-width:640px) {
+    footer {
+        display: none;
+    }
+
+    body {
+        padding-bottom: 10vh;
+    }
     /*Nav Note: include icon images of nav using :before*/
     nav {
         justify-content: flex-start;
         order: 1;
+        position: fixed;
+        bottom: 0;
+        left: 0;
     }
 
     #mobilenav {
@@ -327,22 +678,91 @@ small {
         justify-content: space-around;
     }
     
+    #mobilenav a:last-child::before {
+        content:"";
+        background-image: url(images/profile.png);
+        display: block;
+        width: 10vw;
+        height: 5vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 1vh;
+    }
+
+    #mobilenav a:last-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1vh;
+    }
+
     [alt="Paw Pal Logo"] {
         display: none;
     }
 
-    /*Your Pals page*/
-    #Ppage img {
-        width: 20vw;
-    }
-    #Ppage figure {
-        margin-inline: 0;
-    }
-}
-
-/*For phone screens*/
-@media screen and (max-width:640px) {
-    footer {
+    #NAVprofile {
         display: none;
     }
+    #map {
+        height: 80vh;
+    }
+    /*Page headers*/
+    #Pmobileheader,
+    #PETFINDER,
+    #CalHeader,
+    #PalsH {
+        display: flex;
+        order: -1;
+        background-color: #F4933E;
+        justify-content: center;
+        color: white;
+    }
+
+    /*Your Pets Page*/
+    #Ppage {
+        margin-bottom: 5vh;
+    }
+
+    #Ppage img {
+        width: 35vw;
+        margin: 5vh 4vw;
+    } 
+    
+    #Ppage figure {
+        margin-inline: 0;
+        margin: 2vh 2vw;
+    }
+
+    /*Pet Info*/
+    #pet-header {
+        margin: 0;
+        background-color: #F4933E;
+    }
+    #pet-sub-header {
+        flex-direction: column;
+        background-color: #F4933E;
+        color: white;
+    }
+
+    #pet-sub-header h1 {
+        margin-block: 0;
+        font-size: 1.2rem;
+    }
+
+    #pet-sub-header img{
+        height: 15vh;
+        width: 15vh;
+    }
+
+    [alt="Back"] {
+        width: 12vw;
+        height: 5vh;
+        margin-right: 9vw;
+    }
+
+    #PETINFO,
+    #myWeekChart {
+    width: 80vw;
+}
 }
