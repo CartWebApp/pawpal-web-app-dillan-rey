@@ -335,9 +335,13 @@ use vw(viewport width), vh(viewport height), or rem (root emphasis) -Rey*/
     max-width: 90vw;
     margin: 20px auto;
     padding: 25px;
-    background-color: #D6AF5C;
+    background-color: #E7D6A1;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.PETINFOFORM {
+    width: 25vw;
 }
 
 #log-form button,
@@ -402,12 +406,40 @@ use vw(viewport width), vh(viewport height), or rem (root emphasis) -Rey*/
     box-sizing: border-box;
     font-size: 16px;
     font-family: Roboto;
+    margin: 1vh 0 3vh 0;
 }
 
 .history-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+#history-list,
+#reminders-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 2vh;
+}
+
+#history-list li, #reminders-list li {
+    background-color: #d6af5c;
+    border: 1px solid #BF4904;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#history-list .empty-message, #reminders-list .empty-message {
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    font-style: italic;
+    justify-content: center;
 }
 
 /*Footer*/
@@ -455,6 +487,10 @@ small {
     /*Pet Info Page*/
     .tracker-container {
         flex-direction: column;
+    }
+
+    .PETINFOFORM {
+    width: 90vw;
     }
 
     #log-form input[type="text"],
