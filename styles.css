@@ -308,6 +308,90 @@ use vw(viewport width), vh(viewport height), or rem (root emphasis) -Rey*/
     background-color: #e67a3b;
 }
 
+/* Add Pet Modal Styles */
+
+.modal-overlay {
+    position: fixed; /* Sit on top of the page */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Black background with opacity */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it's on top */
+}
+
+.modal-overlay.hidden {
+    display: none; /* Hide by default */
+}
+
+.modal-content {
+    background-color: #FFA74A;
+    padding: 2rem;
+    border-radius: 8px;
+    border: 2px solid #BF4904;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    font-family: 'Open Sans', sans-serif; /* Using one of your imported fonts */
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #BF4904;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: black;
+}
+
+/* Modal Form Styles */
+#addPetForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Adds space between form elements */
+}
+
+#addPetForm label {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+#addPetForm input[type="text"],
+#addPetForm input[type="number"],
+#addPetForm input[type="file"],
+#addPetForm textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+    border: 1px solid #BF4904;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#addPetForm button {
+    background-color: #BF4904;
+    color: white;
+    font-family: 'Sniglet', sans-serif;
+    font-size: 1.2rem;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#addPetForm button:hover {
+    background-color: #e67a3b;
+}
+
 /*PET INFORMATION PAGE*/
 
 #pet-header, 
@@ -372,7 +456,7 @@ use vw(viewport width), vh(viewport height), or rem (root emphasis) -Rey*/
     font-size: 0.9rem;
     font-weight: 500;
     cursor: pointer;
-    margin-left: 15px;
+    margin-top: 2vh;
 }
 
 .delete-btn:hover,
@@ -442,6 +526,39 @@ use vw(viewport width), vh(viewport height), or rem (root emphasis) -Rey*/
     justify-content: center;
 }
 
+.reminder-time {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.reminder-name {
+    margin: 0 2vw;
+}
+
+.PI-tworow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 44.5vw;
+    background-color: #E7D6A1;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+#PI-MAP,
+#PI-DATE {
+    width:40vw;
+    height: 65vh;
+    margin: 3vh 0;
+    border-radius: 10px;
+    border:solid 1px #777;
+}
+
+#PI-MC {
+    display: flex;
+    justify-content: space-around;
+}
+
 /*Footer*/
 footer {
     display: flex;
@@ -452,29 +569,12 @@ footer {
 }
 
 small {
-    width: 10vw;
     font-size: 1rem;
-    margin: 2vh 0;
+    margin: 4vh 0;
 }
 
 /*For tablets*/
 @media screen and (max-width:1024px){
-    /*Nav Note: include icon images of nav using :before*/
-    nav {
-        justify-content: flex-start;
-        order: 1;
-    }
-
-    #mobilenav {
-        display: flex;
-        width: 100vw;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    
-    [alt="Paw Pal Logo"] {
-        display: none;
-    }
 
     /*Your Pals page*/
     #Ppage img {
@@ -498,7 +598,22 @@ small {
     #log-form select,
     #reminder-form input[type="text"], 
     #reminder-form input[type="time"] {
-    width: 60%;
+    width: 90vw;
+    }
+
+    .PI-tworow {
+        width: 90vw;
+        margin: 4vh 0;
+    }
+
+    #PI-MC {
+        flex-direction: column;
+        align-items: center;
+    }
+    #PI-MAP,
+    #PI-DATE {
+        width:80vw;
+        height: 65vh;
     }
 }
 
@@ -507,4 +622,21 @@ small {
     footer {
         display: none;
     }
+    /*Nav Note: include icon images of nav using :before*/
+    nav {
+        justify-content: flex-start;
+        order: 1;
+    }
+
+    #mobilenav {
+        display: flex;
+        width: 100vw;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    [alt="Paw Pal Logo"] {
+        display: none;
+    }
+
 }
