@@ -311,6 +311,44 @@ use vw(viewport width), vh(viewport height), or rem (root emphasis) -Rey*/
     transform: scale(0.95);
 }
 
+/* Account Page*/
+
+#setting-contain{
+    background-color: #F4933E;
+    padding: 30vh 10vw;
+    margin: 10vh 10vw;
+}
+
+#username-cont{
+    display: flex;
+}
+
+#gen-info{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap: 20px;
+}
+
+#gender-row select{
+    padding: .5vh;
+}
+
+#contact-cont{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+#name-row input{
+    padding: .5vh;
+}
+
+#brth-day-cont input{
+   padding: .5vh;
+}
+
+
 
 /* Map container*/
 

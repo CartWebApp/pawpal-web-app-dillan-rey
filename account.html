@@ -22,6 +22,62 @@
         </div>
     </nav>
 
+    <main id="setting-contain">
+        <form>
+
+            <div id="username-cont">
+            <img src="#" alt="profile-icon">
+            <input type="text" placeholder="Username" id="User">
+            </div>
+
+            <hr>
+            <section id="gen-info">
+                <h3>General Information</h3>
+
+                    <div id="name-row">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" placeholder="John Doe">
+                    </div>
+
+                    <div id="gender-row">
+                        <label for="gender">Gender:</label>
+                        <select name="gender" id="gender-select">
+                        <option value="">Select</option>
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                        <option value="3">They/Them</option>
+                        <option value="4">Perfer not to answer</option>
+                        </select>
+                    </div>
+
+
+                    <div id="brth-day-cont">
+                            <label for="birthday">Birthday:</label>
+                            <input type="date" name="birthday" min="1900-01-01" max="2025-12-31" required />
+                    </div>
+
+            </section>
+
+            <section id="contact-cont"></section>
+                <h3>Contact Information</h3>
+
+                <label for="phone">Phone:</label>
+                <input type="text" placeholder="(XXX)-XXX-XXX">
+
+                <label for="email">Email:</label>
+                <input type="text" placeholder="example@gmail.com">
+                
+                <label for="password">Password:</label>
+                <input type="password" placeholder="*******">
+            </section>
+        </form>
+    
+    <button id="set-button">Settings</button>
+
+
+
+
+    </main>
     <footer>
         <small>&copy; PawPal 2025.</small>
    </footer>

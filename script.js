@@ -107,3 +107,9 @@ function showErrorMessage(text) {
   msg.style.color = '#e74c3c';
   dialog.querySelector('form').appendChild(msg);
 }
+
+
+
+/* Birthday selector*/
+
+
