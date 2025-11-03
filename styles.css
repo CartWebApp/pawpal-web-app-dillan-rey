@@ -16,6 +16,7 @@ nav{
     height: auto;
     background-color: #F4933E;
     width: 100%;
+    margin: 0;
 }
 
 #nav-img{
@@ -78,31 +79,33 @@ use vw(viewport width), vh(viewport height), or rem (root emphasis) -Rey*/
     background-color: #F4933E;
     border-radius: 1vh;
     margin: 0 auto;
-    width: 69.9vh;
+    width: 35vw;
 }
 
-#index-header{
-    background-image: url(elementor-placeholder-image.png);
+#main-head{
+    background-image: url(images/Hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 30vh;
 }
 
-#index-header h1,
-#index-header p,
-#index-header a{
+#main-head h1,
+#main-head p,
+#main-head a{
     display: flex;
     flex-direction: column;
     text-align: center;
     
 }
-#index-header h1{
+#main-head h1{
     font-size: 6vh;
 }
 
-#index-header p{
+#main-head p{
     font-size: 3vh;
 }
 
-#index-header a{
+#main-head a{
     text-decoration: none;
     background-color: white;
     color: black;
@@ -158,7 +161,14 @@ use vw(viewport width), vh(viewport height), or rem (root emphasis) -Rey*/
 
 .create-acc label{
     font-size: 2vh; 
-    
+}
+
+#login {
+    font-family: Roboto;
+}
+
+#sign-up{
+    font-family: Roboto;
 }
 
 .create-acc input{
@@ -169,24 +179,13 @@ use vw(viewport width), vh(viewport height), or rem (root emphasis) -Rey*/
     
 }
 
-.create-button{
-    background-color: white;
-    color: black;
-    border: none;
-    border-radius: 1vh;
-    padding: 1.5vh;
-    margin-top: 1vh;
-    cursor: pointer;
-}
-
-
 .create-acc button{
     background-color: #ffffff;
     color: #000000;
     border: none;
     border-radius: 1vh;
     padding: 1.5vh;
-    margin-top: 1vh;
+    margin-top: 3vh;
     cursor: pointer;
     font-size: 2vh;
 }
@@ -197,10 +196,16 @@ use vw(viewport width), vh(viewport height), or rem (root emphasis) -Rey*/
 
 #password-row{
     display: flex;
-    text-align: center;
-    gap: 22vw;
+    justify-content: space-between;
 }
 
+#password-row a{
+    text-decoration: none;
+    color: #000000;
+}
+#password-row a:hover{
+    color: #ffcca0;
+}
 
 .have-acc{
     display: flex;
@@ -215,6 +220,7 @@ use vw(viewport width), vh(viewport height), or rem (root emphasis) -Rey*/
     padding: .5vh  1vw;
     border-radius: 1vh;
 }
+
 .have-acc a:hover{
     background-color: #ffc28d;
 }
@@ -255,6 +261,114 @@ use vw(viewport width), vh(viewport height), or rem (root emphasis) -Rey*/
     width: 2.4vh;
 }
 
+/* Overlay Forgot Password*/
+
+#reset-ps{
+    background-color:#F4933E;
+    transform: scale(.95);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    border: none;
+    padding:15vh 20vw;
+}
+
+#overlay-cont{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 3vh;
+     font-family: Roboto;
+     font-size: 2.5vh;
+}
+
+#overlay-cont h2{
+    background-color: #ffffff;
+    padding: 5vh 10vw;
+    border-radius: 1vh;
+}
+
+#reset-form label{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#reset-form input{
+    padding: 1vh 4vw;
+    border: 1px solid #ccc;
+    border-radius: 1vh;
+    font-size: 2vh;
+}
+
+#reset-form button{
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 1vh;
+    padding: 1.5vh;
+    margin-top: 3vh;
+    cursor: pointer;
+    font-size: 2vh
+}
+
+#reset-form button:hover{
+    background-color: #ffc28d;
+}
+
+#cancel-btn,
+#reset-btn{
+    background: none;
+    padding: 1vh .5vw;
+}
+
+
+#reset-ps.showing{
+    opacity: 1;
+    transform: scale(1);
+}
+
+#reset-ps.hiding{
+    opacity: 0;
+    transform: scale(0.95);
+}
+
+/* Account Page*/
+
+#setting-contain{
+    background-color: #F4933E;
+    padding: 30vh 10vw;
+    margin: 10vh 10vw;
+}
+
+#username-cont{
+    display: flex;
+}
+
+#gen-info{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap: 20px;
+}
+
+#gender-row select{
+    padding: .5vh;
+}
+
+#contact-cont{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+#name-row input{
+    padding: .5vh;
+}
+
+#brth-day-cont input{
+   padding: .5vh;
+}
+
+
+
 /* Map container*/
 
 #map{
@@ -265,9 +379,34 @@ use vw(viewport width), vh(viewport height), or rem (root emphasis) -Rey*/
 
 #BIGCAL {
     display: flex;
-    width: 100%;
+    width:100%;
     justify-content: center;
-    margin: 5vh 0;
+    margin: 10vh 0;
+}
+
+#CALENDAR {
+    height: 80vh;
+    width: 70vw;
+}
+
+ #search-bar {
+   display: flex;
+    height: 5vh;
+    margin-left: 10vh;
+    margin-top: 2vh;
+}
+
+
+#search-bar input{
+    background-image: url(images/search.png);
+    background-size: 5vh;
+    background-repeat: no-repeat;
+    background-position: right;
+    position: relative;
+    background-color: white;
+    border:none;
+    padding: 0 4vh;
+    font-size: 2vh;
 }
 
 /*Your pets section of css*/
@@ -342,7 +481,7 @@ use vw(viewport width), vh(viewport height), or rem (root emphasis) -Rey*/
     border-radius: 8px;
     border: 2px solid #BF4904;
     width: 90%;
-    max-width: 500px;
+    max-width: 40vw;
     position: relative;
     font-family: 'Open Sans', sans-serif;
 }
@@ -355,6 +494,7 @@ use vw(viewport width), vh(viewport height), or rem (root emphasis) -Rey*/
     font-weight: bold;
     color: #BF4904;
     cursor: pointer;
+    margin: 2vh 0 5vh 0;
 }
 
 .close-button:hover {
@@ -368,7 +508,7 @@ use vw(viewport width), vh(viewport height), or rem (root emphasis) -Rey*/
 }
 
 #addPetForm label {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     font-weight: 600;
 }
 
@@ -393,7 +533,7 @@ use vw(viewport width), vh(viewport height), or rem (root emphasis) -Rey*/
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin-top: 10px;
+    margin: 2vh 0 4vh 0;
 }
 
 #addPetForm button:hover {
@@ -651,6 +791,11 @@ small {
         width:80vw;
         height: 65vh;
     }
+    /*Calendar*/
+        #CALENDAR {
+            height: 70vh;
+            width: 80vw;
+        }
 }
 
 /*For phone screens*/
@@ -673,28 +818,34 @@ small {
 
     #mobilenav {
         display: flex;
-        width: 100vw;
+        width: 100%;
         flex-direction: row;
         justify-content: space-around;
     }
-    
-    #mobilenav a:last-child::before {
-        content:"";
-        background-image: url(images/profile.png);
+    #mobilenav a::before {
+        content: "";
         display: block;
-        width: 10vw;
-        height: 5vh;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        width: 10vw;
+        height: 5vh;
         margin-top: 1vh;
     }
 
-    #mobilenav a:last-child {
+    #mobilenav a {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-bottom: 1vh;
+    }
+    
+    #mobilenav a:last-child::before {
+        background-image: url(images/profile.png);
+    }
+
+    #mobilenav a:nth-child(2)::before {
+        background-image: url(images/Pin.png);
     }
 
     [alt="Paw Pal Logo"] {
@@ -734,6 +885,10 @@ small {
         margin: 2vh 2vw;
     }
 
+    .modal-content {
+        width: 90%;
+        max-width: 80vw;
+    }
     /*Pet Info*/
     #pet-header {
         margin: 0;
@@ -764,5 +919,11 @@ small {
     #PETINFO,
     #myWeekChart {
     width: 80vw;
-}
+    }
+
+    /*Calendar*/
+    #CALENDAR {
+        height: 60vh;
+        width: 90vw;
+    }
 }
