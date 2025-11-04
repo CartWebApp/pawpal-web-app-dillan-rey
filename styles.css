@@ -484,6 +484,101 @@ nav a{
     font-size: 2.5vh;
 }
 
+
+/* Settings */
+
+#settings-main{
+    display: flex;
+    flex-direction: column;
+    background-color: #F4933E;
+    font-size: 2.5vh;
+    padding: 20vh 5vw;
+    margin: 10vh 10vw;
+}
+
+#top-setting{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#top-setting a{
+    display: flex;
+    width: 9vw;
+}
+
+
+#top-setting h2{
+    display: flex;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 1vh;
+    padding: 5vh 5vw;
+}
+
+#options{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+    margin-top: 10vh;
+}
+
+#options h3{
+    background-color: #ffffff;
+    padding: 2vh 3vw;
+    border-radius: 1vh;
+}
+
+.option label{
+    background-color: #ffffff;
+    color: black;
+    padding: 2vh 5vh;
+    border-radius: 1vh;
+    font-size: 2.5vh;
+}
+.option input{
+    transform: scale(1.5);
+    margin-left: 2vh;
+}
+
+#acc-option{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+    padding: 5vh 0;
+}
+
+#acc-option a{
+    text-decoration: none;
+    background-color: #ffffff;
+    color: black;
+    padding: 2vh 5vh;
+    border-radius: 1vh;
+    font-size: 2.5vh;
+}
+
+#terms-privacy-help{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+    padding: 5vh 0;
+}
+
+#terms-privacy-help a{
+    text-decoration: none;
+    background-color: #ffffff;
+    color: black;
+    padding: 2vh 5vh;
+    border-radius: 1vh;
+    font-size: 2.5vh;
+}
+
+
 /* Map container*/
 
 #map{
