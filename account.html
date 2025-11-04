@@ -29,20 +29,24 @@
         <form>
 
             <div id="username-cont">
-            <img src="#" alt="profile-icon">
-            <input type="text" placeholder="Username" id="User">
+                <img src="images/profile2.png" alt="profile icon">
+                    <input type="text" placeholder="Username" id="User" readonly>
+                <button type="button" class="edit-btn">
+                    ◁
+                </button>
             </div>
 
-            <hr>
+
+        <div id="general-contact-container">
             <section id="gen-info">
                 <h3>General Information</h3>
 
-                    <div id="name-row">
+                    <div id="name-cont">
                         <label for="name">Name:</label>
                         <input type="text" id="name" placeholder="John Doe">
                     </div>
 
-                    <div id="gender-row">
+                    <div id="gender-cont">
                         <label for="gender">Gender:</label>
                         <select name="gender" id="gender-select">
                         <option value="">Select</option>
@@ -55,27 +59,45 @@
 
 
                     <div id="brth-day-cont">
-                            <label for="birthday">Birthday:</label>
+                            
+                        <label for="birthday">Birthday:</label>
                             <input type="date" name="birthday" min="1900-01-01" max="2025-12-31" required />
                     </div>
 
             </section>
 
-            <section id="contact-cont"></section>
+            <section id="contact-container">
                 <h3>Contact Information</h3>
 
-                <label for="phone">Phone:</label>
-                <input type="text" placeholder="(XXX)-XXX-XXX">
+                    <div id="phone-cont">
+                        <label for="phone">Phone:</label>
+                            <input type="tel" placeholder="(XXX)-XXX-XXX" readonly>
+                        <button type="button" class="edit-btn">
+                            ◁
+                        </button>
+                    </div>
 
-                <label for="email">Email:</label>
-                <input type="text" placeholder="example@gmail.com">
-                
-                <label for="password">Password:</label>
-                <input type="password" placeholder="*******">
+                    <div id="email-cont">
+                        <label for="email">Email:</label>
+                            <input type="email" placeholder="example@gmail.com" readonly>
+                        <button type="button" class="edit-btn">
+                            ◁
+                        </button>
+                    </div>
+
+                    <div id="ps-cont">
+                        <label for="password">Password:</label>
+                            <input type="password" placeholder="*******" readonly>
+                        <button type="button" class="edit-btn">
+                            ◁
+                        </button>
+                    </div>
             </section>
-        </form>
+
+        </div>  
+    </form>
     
-    <button id="set-button">Settings</button>
+    <a href="settings.html" id="acc-setting">Setting</a>
 
 
 
@@ -84,5 +106,7 @@
     <footer>
         <small>&copy; PawPal 2025.</small>
    </footer>
+
+   <script src="edit.js"></script>
 </body>
 </html>
