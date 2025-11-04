@@ -63,6 +63,12 @@ nav a{
 }
 
 /*Home Page*/
+#i-art-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #about{
     display: flex;
     flex-direction: column;
@@ -73,34 +79,37 @@ nav a{
     margin: 5vh 5vw;
 }
 
+#about p {
+    margin: 0vh 4vw 6vh 4vw;
+}
+
 .head-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #F4933E;
     border-radius: 1vh;
-    margin: 0 auto;
-    width: 35vw;
+    width: 40vw;
 }
 
 #main-head{
+    display: flex;
+    justify-content: center;
     background-image: url(images/Hero.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 30vh;
+    background-position: center;
+    padding: 30vh 0;
+    text-align: center;
 }
 
-#main-head h1,
-#main-head p,
-#main-head a{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    
-}
 #main-head h1{
     font-size: 6vh;
 }
 
 #main-head p{
     font-size: 3vh;
+    margin: 0vh 4vw 3vh 4vw;
 }
 
 #main-head a{
@@ -110,15 +119,18 @@ nav a{
     padding:  1.5vh 2vh;
     width: 15vh;
     border-radius: 1vh;
-    margin: 0 auto;
+    margin-bottom: 4vh;
 }
-
 
 #service-cont{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 5vh 0;
+    justify-content: space-between;
+    width: 90%;
+}
+
+#service-cont p {
+    margin: 1vh 4vw 2vh 4vw;
 }
 
 #service{
@@ -128,28 +140,19 @@ nav a{
     background-color: #F4933E;
     font-size: 2.5vh;
     border-radius: 1vh;
-    width: 35vw;
+    width: 55vw;
 }
 
 #side-pic{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     width:  30vw;
-    
+    border-radius: 10px;
 }
 
-#review-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#quote {
+    margin: 7vh 0 4vh 0;
+    width: 100%;
+    background-color: rgba(153, 99, 38, 0.199);
     text-align: center;
-    border-radius: 1vh;
-    background-color: #F4933E;
-    width: 400vh 100vh;
-    font-size: 25px;
-    margin: 5vh 5vw;
-    margin-bottom: 0;
 }
 
 /*Create an Account and Sign in*/
@@ -860,6 +863,23 @@ small {
         height: 6.5vw;
     }
 
+    .head-container {
+        width: 65vw;
+    }
+
+    #service-cont {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #service {
+        width: 100%;
+    }
+
+    #side-pic {
+        margin: 4vh 0 0 0;
+        width: 60vw;
+    }
     /*Your Pals page*/
     #Ppage img {
         width: 20vw;
