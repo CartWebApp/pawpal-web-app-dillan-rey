@@ -403,9 +403,6 @@ nav a{
     align-items: center;
 }
 
-
-
-
 /* Account General Info*/
 
 #gen-info{
@@ -510,7 +507,6 @@ nav a{
     margin-left: 10vh;
     margin-top: 2vh;
 }
-
 
 #search-bar input{
     background-image: url(images/search.png);
@@ -841,6 +837,158 @@ nav a{
     justify-content: space-around;
 }
 
+/*Pals Page*/
+#FRIENDS {
+    display: flex;
+    justify-content: center;
+}
+
+#DENJI {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+}
+
+.Pal {
+    display: flex;
+    align-items: center;
+    width: 30vw;
+    background-color: #D6AF5C;
+    border-radius: 10px;
+    border: 3px solid #623917;
+}
+
+.Pal img {
+    width: 7vw;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-right: 3px solid #623917;
+    margin-right: 7vw;
+}
+
+.Pal p {
+    font-size: 1.3rem;
+}
+/* The main chat container */
+.chat-container {
+    width: 30vw;
+    height: 600px;
+    background-color: #d6af5c;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Chat header styling */
+.chat-header {
+    background-color: #E67B1E;
+    color: white;
+    padding: 16px 20px;
+    text-align: center;
+    border-bottom: 1px solid #623917;
+}
+
+.chat-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+/* Main message area */
+.chat-messages {
+    flex: 1; /* Allows this area to grow and fill available space */
+    padding: 20px;
+    overflow-y: auto; /* Adds scrolling for long conversations */
+    background-color: #E7D6A1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Adds space between messages */
+}
+
+/* Styling for all messages */
+.message {
+    max-width: 75%;
+    padding: 10px 15px;
+    border-radius: 18px;
+    line-height: 1.4;
+}
+
+.message p {
+    margin: 0;
+}
+
+/* Styling for incoming (left-aligned) messages */
+.message.incoming {
+    background-color: #BF4904;
+    color: white;
+    align-self: flex-start;
+    border-bottom-left-radius: 4px;
+}
+
+/* Styling for outgoing (right-aligned) messages */
+.message.outgoing {
+    background-color: #D6AF5C;
+    color: black;
+    align-self: flex-end;
+    border-bottom-right-radius: 4px;
+}
+
+/* Chat input form area */
+.chat-input {
+    display: flex;
+    padding: 2vh 1vw;
+    background-color: #E67B1E;
+    border-top: 1px solid #dddddd;
+    width: 28vw;
+}
+
+.chat-input form {
+    display: flex;
+    width: 28vw;
+}
+
+#chat-form {
+    display: flex;
+    justify-content: space-between;
+    width: 28vw;
+}
+
+.chat-input input[type="text"] {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 1vh 2vw;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+    width: 16vw;
+}
+
+.chat-input input[type="text"]:focus {
+    border-color: #BF4904;
+}
+
+.chat-input button {
+    background-color: #BF4904;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 2vh 2vw;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.chat-input button:hover {
+    background-color: #D6AF5C;
+}
+
+.chat-close-btn {
+    display: none;
+}
+
 /*Footer*/
 footer {
     display: flex;
@@ -933,6 +1081,23 @@ small {
             height: 70vh;
             width: 80vw;
         }
+    /*Pals Page*/
+    #DENJI,
+    .chat-container,
+    .chat-input,
+    .Pal {
+        width: 44vw;
+    }
+
+    #chat-form {
+        width: 42vw;
+    }
+    .chat-input input[type="text"] {
+        width: 26vw;
+    }
+    .Pal img {
+        width:12vw;
+    }
 }
 
 /*For phone screens*/
@@ -1091,5 +1256,61 @@ small {
     #CALENDAR {
         height: 60vh;
         width: 90vw;
+    }
+
+    /*Pals Page*/
+    #FRIENDS {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #DENJI,
+    .chat-container,
+    .Pal {
+        width: 80vw;
+    }
+    .chat-input {
+        width: 100vw;
+    }
+    #chat-form {
+        width: 98vw;
+    }
+    .chat-input input[type="text"] {
+        width: 76vw;
+    }
+
+    .Pal img {
+        width:20vw;
+    }
+
+    .chat-container {
+        /* Hide the chat container by default on mobile */
+        display: none;
+        
+        /* Make it a full-screen fixed overlay */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh; /* Full viewport height */
+        z-index: 1000;
+        
+        /* Remove desktop-specific sizing */
+        border-radius: 0;
+        margin: 0;
+    }
+    .chat-container.chat-overlay-open {
+        display: flex; /* This makes it visible */
+    }
+    .chat-close-btn {
+        display: block; /* Show the button */
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 2.5rem;
+        font-weight: 300;
+        color: white;
+        cursor: pointer;
+        line-height: 1;
     }
 }
