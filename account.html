@@ -20,7 +20,7 @@
             <a href="login.html">Login</a>
         </div>
         <div id="NAVprofile">
-        <a href="account.html"><img src="images/pfp.png" alt="Account Profile"></a>
+        <a href="account.html"><img src="images/profile.png" alt="Account Profile"></a>
         <p>Profile</p>
         </div>
     </nav>
@@ -29,15 +29,11 @@
         <form>
 
             <div id="username-cont">
-                <img src="images/profile2.png" alt="profile icon">
-                    <input type="text" placeholder="Username" id="User" readonly>
-                <button type="button" class="edit-btn">
-                    ◁
-                </button>
+            <img src="images/profile2.png" alt="profile-icon">
+            <input type="text" placeholder="Username" id="User">
             </div>
 
-
-        <div id="general-contact-container">
+            <hr>
             <section id="gen-info">
                 <h3>General Information</h3>
 
@@ -59,8 +55,7 @@
 
 
                     <div id="brth-day-cont">
-                            
-                        <label for="birthday">Birthday:</label>
+                            <label for="birthday">Birthday:</label>
                             <input type="date" name="birthday" min="1900-01-01" max="2025-12-31" required />
                     </div>
 
@@ -69,35 +64,27 @@
             <section id="contact-container">
                 <h3>Contact Information</h3>
 
-                    <div id="phone-cont">
-                        <label for="phone">Phone:</label>
-                            <input type="tel" placeholder="(XXX)-XXX-XXX" readonly>
-                        <button type="button" class="edit-btn">
-                            ◁
-                        </button>
-                    </div>
 
-                    <div id="email-cont">
-                        <label for="email">Email:</label>
-                            <input type="email" placeholder="example@gmail.com" readonly>
-                        <button type="button" class="edit-btn">
-                            ◁
-                        </button>
-                    </div>
+            <div id="phone-cont">
+                <label for="phone">Phone:</label>
+                <input type="text" placeholder="(XXX)-XXX-XXX">
+            </div>
 
-                    <div id="ps-cont">
-                        <label for="password">Password:</label>
-                            <input type="password" placeholder="*******" readonly>
-                        <button type="button" class="edit-btn">
-                            ◁
-                        </button>
-                    </div>
+            <div id="email-cont">
+                <label for="email">Email:</label>
+                <input type="text" placeholder="example@gmail.com">
+            </div>
+
+            <div id="ps-cont">
+                <label for="password">Password:</label>
+                <input type="password" placeholder="*******">
+            </div>
+
+
             </section>
-
-        </div>  
-    </form>
+        </form>
     
-    <a href="settings.html" id="acc-setting">Setting</a>
+    <button id="set-button">Settings</button>
 
 
 
@@ -106,7 +93,5 @@
     <footer>
         <small>&copy; PawPal 2025.</small>
    </footer>
-
-   <script src="edit.js"></script>
 </body>
 </html>
