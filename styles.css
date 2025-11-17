@@ -495,7 +495,6 @@ nav a{
 
 #top-setting{
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
@@ -503,7 +502,7 @@ nav a{
 
 #top-setting a{
     display: flex;
-    width: 9vw;
+    align-self: flex-start;
 }
 
 
@@ -512,18 +511,20 @@ nav a{
     text-align: center;
     background-color: #ffffff;
     border-radius: 1vh;
-    padding: 5vh 5vw;
+    padding: 5vh 10vw;
 }
+
 
 #options{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    
     gap: 5vh;
     margin-top: 10vh;
 }
 
 #options h3{
+    display: flex;
     background-color: #ffffff;
     padding: 2vh 3vw;
     border-radius: 1vh;
