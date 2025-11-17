@@ -20,39 +20,68 @@
             <a href="login.html">Login</a>
         </div>
         <div id="NAVprofile">
-        <a href="account.html"><img src="images/profile.png" alt="Account Profile"></a>
+        <a href="account.html"><img src="images/pfp.png" alt="Account Profile"></a>
         <p>Profile</p>
         </div>
     </nav>
-    <main>
-        <section>
+    <main id="FRIENDS">
+        <section id="DENJI">
             <h2>Your Pals</h2>
             <figure class="Pal">
-                <img src="#" alt="Image of friend">
+                <img src="images/Denji.jpg" alt="Image of friend" class="DMAN">
                 <p>Pal Name</p>
             </figure>
             <figure class="Pal">
-                <img src="#" alt="Image of friend">
+                <img src="images/Denji.jpg" alt="Image of friend" class="DMAN">
                 <p>Pal Name</p>
             </figure>
             <figure class="Pal">
-                <img src="#" alt="Image of friend">
+                <img src="images/Denji.jpg" alt="Image of friend" class="DMAN">
                 <p>Pal Name</p>
             </figure>
             <figure class="Pal">
-                <img src="#" alt="Image of friend">
+                <img src="images/Denji.jpg" alt="Image of friend" class="DMAN">
                 <p>Pal Name</p>
             </figure>
         </section>
-        <section>
-            <h2>Pal Name</h2>
-        </section>
+    <figure class="chat-container">
+        <div class="chat-header">
+            <h3>Pal Name</h3>
+            <span class="chat-close-btn">&times;</span>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <div class="message incoming">
+                <p>I met a girl named Reze today</p>
+            </div>
+            <div class="message outgoing">
+                <p>AYYYYYYY</p>
+            </div>
+            <div class="message incoming">
+                <p>Yeah, we're on a date and everything. We're watching the fireworks right now.</p>
+            </div>
+            <div class="message outgoing">
+                <p>This must be a miracle.</p>
+            </div>
+             <div class="message incoming">
+                <p>Hold on, she's acting strange...</p>
+            </div>
+        </div>
+        <div class="chat-input">
+            <form id="chat-form">
+                <input type="text" id="message-input" placeholder="Type your message..." autocomplete="off">
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </figure>
     </main>
     <aside id="PalsH">
+        <a href="index.html" ><img id="pawimgf" src="images/Pawmobile.png" alt="PawPal Responsive Logo"></a>
         <h1>Pals</h1>
     </aside>
+
     <footer>
         <small>&copy; PawPal 2025.</small>
    </footer>
+   <script src="friend.js"></script>
 </body>
 </html>
