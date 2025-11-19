@@ -518,15 +518,15 @@ nav a{
 #options-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    gap: 5vw;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2.5vw;
 }
 
 #gen-options{ 
     display: flex;
     flex-direction: column;
     gap:  2vw;
-    flex:1
 }
 
 #gen-options h3{
@@ -550,7 +550,6 @@ nav a{
     display: flex;
     flex-direction: column;
     gap:2vh;
-    flex:1;
 }
 
 #acc-option h3{
@@ -1419,5 +1418,19 @@ small {
         color: white;
         cursor: pointer;
         line-height: 1;
+    }
+
+
+
+
+/* Settings pages */ 
+
+    #option-container{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    #terms-privacy-help{
+        flex-direction: column;
     }
 }
