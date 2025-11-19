@@ -493,9 +493,9 @@ nav a{
     margin: 10vh 10vw;
 }
 
+
 #top-setting{
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
@@ -503,7 +503,7 @@ nav a{
 
 #top-setting a{
     display: flex;
-    width: 9vw;
+    align-self: flex-start;
 }
 
 
@@ -512,43 +512,51 @@ nav a{
     text-align: center;
     background-color: #ffffff;
     border-radius: 1vh;
-    padding: 5vh 5vw;
+    padding: 5vh 10vw;
 }
 
-#options{
+#option-container{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 5vh;
-    margin-top: 10vh;
 }
 
-#options h3{
+#gen-options{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    padding: 5vh 0;
+}
+
+#gen-options h3{
     background-color: #ffffff;
     padding: 2vh 3vw;
     border-radius: 1vh;
+    margin-bottom: 0;
 }
 
-.option label{
+#gen-options button{
+    font-family: sniglet;
     background-color: #ffffff;
     color: black;
     padding: 2vh 5vh;
     border-radius: 1vh;
     font-size: 2.5vh;
-}
-.option input{
-    transform: scale(1.5);
-    margin-left: 2vh;
+    border: none;
 }
 
 #acc-option{
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 3vh;
     padding: 5vh 0;
 }
 
+#acc-option h3{
+    background-color: #ffffff;
+    padding: 2vh 3vw;
+    border-radius: 1vh;
+    margin-bottom: 0;
+}
 #acc-option a{
     text-decoration: none;
     background-color: #ffffff;
