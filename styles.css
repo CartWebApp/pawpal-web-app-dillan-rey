@@ -515,16 +515,18 @@ nav a{
     padding: 5vh 10vw;
 }
 
-#option-container{
+#options-container{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2.5vw;
 }
 
-#gen-options{
+#gen-options{ 
     display: flex;
     flex-direction: column;
-    gap: 5vh;
-    padding: 5vh 0;
+    gap:  2vw;
 }
 
 #gen-options h3{
@@ -534,7 +536,7 @@ nav a{
     margin-bottom: 0;
 }
 
-#gen-options button{
+#gen-options div{
     font-family: sniglet;
     background-color: #ffffff;
     color: black;
@@ -547,8 +549,7 @@ nav a{
 #acc-option{
     display: flex;
     flex-direction: column;
-    gap: 3vh;
-    padding: 5vh 0;
+    gap:2vh;
 }
 
 #acc-option h3{
@@ -557,6 +558,8 @@ nav a{
     border-radius: 1vh;
     margin-bottom: 0;
 }
+
+
 #acc-option a{
     text-decoration: none;
     background-color: #ffffff;
@@ -1415,5 +1418,19 @@ small {
         color: white;
         cursor: pointer;
         line-height: 1;
+    }
+
+
+
+
+/* Settings pages */ 
+
+    #option-container{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    #terms-privacy-help{
+        flex-direction: column;
     }
 }
