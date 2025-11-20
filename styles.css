@@ -546,6 +546,10 @@ nav a{
     border: none;
 }
 
+.toggle-switch{
+    
+}
+
 #acc-option{
     display: flex;
     flex-direction: column;
