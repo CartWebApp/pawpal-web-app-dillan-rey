@@ -474,7 +474,7 @@ nav a{
     text-decoration: none;
     background-color: #ffffff;
     color: black;
-    padding: 2vh 5vh;
+    padding: 2vh 3vw;
     width: 15vh;
     border-radius: 1vh;
     margin: 0 auto;
@@ -498,8 +498,6 @@ nav a{
     display: flex;
     justify-content: center;
 }
-
-
 
 #top-setting a{
     display: flex;
@@ -536,18 +534,20 @@ nav a{
     margin-bottom: 0;
 }
 
-#gen-options div{
-    font-family: sniglet;
+.notif{
+    display: flex;
     background-color: #ffffff;
     color: black;
-    padding: 2vh 5vh;
+    padding: 2vh 5vw;
     border-radius: 1vh;
-    font-size: 2.5vh;
-    border: none;
+}
+
+.notif p{
+
 }
 
 .toggle-switch{
-    
+
 }
 
 #acc-option{
@@ -568,7 +568,7 @@ nav a{
     text-decoration: none;
     background-color: #ffffff;
     color: black;
-    padding: 2vh 5vh;
+    padding: 2vh 5vw;
     border-radius: 1vh;
     font-size: 2.5vh;
 }
