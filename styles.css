@@ -534,6 +534,14 @@ nav a{
     margin-bottom: 0;
 }
 
+.d-mode-toggle{
+    display: flex;
+    background-color: #ffffff;
+    color: black;
+    padding: 2vh 5vw;
+    border-radius: 1vh;
+}
+
 .notif{
     display: flex;
     background-color: #ffffff;
@@ -542,12 +550,15 @@ nav a{
     border-radius: 1vh;
 }
 
-.notif p{
-
+.txt-label{
+    display: flex;
 }
 
 .toggle-switch{
-
+    display: flex;
+    align-items: center;
+    position: relative;
+    
 }
 
 #acc-option{
