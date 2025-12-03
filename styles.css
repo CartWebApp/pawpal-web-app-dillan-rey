@@ -528,6 +528,8 @@ nav a{
 }
 
 #gen-options h3{
+    display: flex;
+    justify-content: center;
     background-color: #ffffff;
     padding: 2vh 3vw;
     border-radius: 1vh;
@@ -546,20 +548,54 @@ nav a{
     display: flex;
     background-color: #ffffff;
     color: black;
-    padding: 2vh 5vw;
+    padding: 2vh 4vw;
     border-radius: 1vh;
 }
 
-.txt-label{
-    display: flex;
+.toggle-switch{
+    position: relative;
+    display: inline-block;
+    width: 2vw;
+    height: 2vh;
 }
 
-.toggle-switch{
-    display: flex;
-    align-items: center;
-    position: relative;
-    
+.toggle-switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
 }
+
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+.slider:before{
+    position: absolute;
+    content: "";
+    height: 1.5vh;
+    width: 1.5vh;
+    left: .25vh;
+    bottom: .25vh;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider{
+    background-color: #000000;
+}
+
+input:checked + .slider:before{
+    transform: translateX(1vw);
+}
+
 
 #acc-option{
     display: flex;
