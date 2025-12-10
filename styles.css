@@ -643,6 +643,15 @@ input:checked + .slider:before{
 
 /* Privacy Policy Page */
 
+.privacy-terms-help-head{
+    display: flex; 
+    align-items: center;
+}
+
+.privacy-terms-help-head a{
+    max-width:13vw;
+}
+
 #privacy-terms-help-section{
     display: flex;
     flex-direction: column;;
@@ -661,7 +670,7 @@ input:checked + .slider:before{
     border-radius: 1vh;
 }
 
-.privacy-terms-help-back{
+#privacy-policy-content{
     background-color: #ffffff;
     color: black;
     padding: 2vh 3vw;
