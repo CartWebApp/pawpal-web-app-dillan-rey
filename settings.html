@@ -38,20 +38,22 @@
         <section id="gen-options">
             <h3>General Options</h3>
 
-            <div>
-                <label for="Dark Mode">Enable Notifications</label>
+                <div class="notif">
+                        <label class="text-label">Enable Notifications</label>
                     <label class="toggle-switch">
-                        <input type="checkbox"  name="darkmode">
+                        <input type="checkbox"  name="notifications">
                         <span class="slider"></span>
                     </label>
-            </div>
+                </div>
 
-            <div>
-                <label for="Dark Mode">Dark Mode
-                    <input type="checkbox"  name="darkmode">
+            <div class="d-mode-toggle">
+                    <label class="text-label">Dark Mode</label>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="darkmodetoggle" name="darkmodetoggle">
                     <span class="slider"></span>
                 </label>
             </div>
+
         </section>
 
         <section id="acc-option">
@@ -63,7 +65,7 @@
 </div>
 
         <section id="terms-privacy-help">
-            <a href="#">Privacy Policy</a>
+            <a href="Privacy-Policy.html">Privacy Policy</a>
             <a href="#">Terms of Service</a>
             <a href="#">Help & Support</a>
         </section>
@@ -74,5 +76,8 @@
     <footer>
          <small>&copy; PawPal 2025.</small>
     </footer>
+
+    <script src="darkmode.js"></script>
+   
 </body>
 </html>

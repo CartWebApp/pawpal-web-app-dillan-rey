@@ -474,7 +474,7 @@ nav a{
     text-decoration: none;
     background-color: #ffffff;
     color: black;
-    padding: 2vh 5vh;
+    padding: 2vh 3vw;
     width: 15vh;
     border-radius: 1vh;
     margin: 0 auto;
@@ -498,8 +498,6 @@ nav a{
     display: flex;
     justify-content: center;
 }
-
-
 
 #top-setting a{
     display: flex;
@@ -530,25 +528,77 @@ nav a{
 }
 
 #gen-options h3{
+    display: flex;
+    justify-content: center;
     background-color: #ffffff;
     padding: 2vh 3vw;
     border-radius: 1vh;
     margin-bottom: 0;
 }
 
-#gen-options div{
-    font-family: sniglet;
+.d-mode-toggle{
+    display: flex;
+    align-items: center;
     background-color: #ffffff;
     color: black;
-    padding: 2vh 5vh;
+    padding: 2vh 4vw;
     border-radius: 1vh;
-    font-size: 2.5vh;
-    border: none;
+}
+
+.notif{
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    color: black;
+    padding: 2vh 4vw;
+    border-radius: 1vh;
 }
 
 .toggle-switch{
-    
+    position: relative;
+    display: inline-block;
+    width: 2vw;
+    height: 2vh;
+    margin-left: 1vw;
 }
+
+.toggle-switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 30px;
+}
+.slider:before{
+    position: absolute;
+    content: "";
+    height: 1.4vh;
+    width: 1.4vh;
+    left: .25vh;
+    bottom: .25vh;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider{
+    background-color: #000000;
+}
+
+input:checked + .slider:before{
+    transform: translateX(1vw);
+}
+
 
 #acc-option{
     display: flex;
@@ -558,7 +608,7 @@ nav a{
 
 #acc-option h3{
     background-color: #ffffff;
-    padding: 2vh 3vw;
+    padding: 2vh 4vw;
     border-radius: 1vh;
     margin-bottom: 0;
 }
@@ -568,7 +618,7 @@ nav a{
     text-decoration: none;
     background-color: #ffffff;
     color: black;
-    padding: 2vh 5vh;
+    padding: 2vh 5vw;
     border-radius: 1vh;
     font-size: 2.5vh;
 }
@@ -588,6 +638,44 @@ nav a{
     padding: 2vh 5vh;
     border-radius: 1vh;
     font-size: 2.5vh;
+}
+
+
+/* Privacy Policy Page */
+
+.privacy-terms-help-head{
+    display: flex; 
+    align-items: center;
+}
+
+.privacy-terms-help-head a{
+    max-width:13vw;
+}
+
+#privacy-terms-help-section{
+    display: flex;
+    flex-direction: column;;
+    background-color: #F4933E;
+    font-size: 2.5vh;
+    padding: 10vh 10vw;
+    margin: 10vh 10vw;
+}
+
+
+#privacy-terms-help-section h2{
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 5vh 10vw;
+    border-radius: 1vh;
+}
+
+#privacy-policy-content{
+    background-color: #ffffff;
+    color: black;
+    padding: 2vh 3vw;
+    border-radius: 1vh;
+    margin-bottom: 5vh;
 }
 
 
