@@ -635,7 +635,7 @@ input:checked + .slider:before{
     text-decoration: none;
     background-color: #ffffff;
     color: black;
-    padding: 2vh 5vh;
+    padding: 2vh 5vw;
     border-radius: 1vh;
     font-size: 2.5vh;
 }
