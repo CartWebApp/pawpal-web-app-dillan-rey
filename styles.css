@@ -641,6 +641,34 @@ input:checked + .slider:before{
 }
 
 
+/* Dark Mode */
+
+body.dark-mode{
+    background-color: #000000;
+    color: #000000;
+}
+body.dark-mode label{
+    color: #000000;
+}
+
+body.dark-mode input{
+    color: #000000;
+}
+
+body.dark-mode a{
+    color: #ffffff;
+}
+
+body.dark-mode nav{
+    background-color: #303030;
+    color: #ffffff;
+}
+
+body.dark-mode #settings-main{
+    background-color: #000000;
+    color: #ffffff;
+}
+
 /* Privacy Policy Page */
 
 .privacy-terms-help-head{
